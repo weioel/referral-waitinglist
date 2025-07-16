@@ -15,6 +15,7 @@ const apiInstance = new SibApiV3Sdk.TransactionalEmailsApi();
 
 const app = express();
 const PORT = process.env.PORT || 3003;
+const BASE_URL = process.env.BASE_URL || `http://localhost:${PORT}`;
 
 // Middleware
 app.use(cors());
@@ -79,7 +80,7 @@ async function sendWelcomeEmail(email, referralCode) {
         <div style="background: #F8FAFF; padding: 20px; border-radius: 10px; margin: 20px 0;">
           <h3 style="color: #FF90BF; margin-top: 0;">Dein Referral-Link:</h3>
           <p style="word-break: break-all; background: white; padding: 10px; border-radius: 5px;">
-            http://localhost:${PORT}/?ref=${referralCode}
+            ${BASE_URL}/?ref=${referralCode}
           </p>
         </div>
         
@@ -163,7 +164,7 @@ async function sendWelcomeEmailWithPosition(email, referralCode, position, nextJ
                 📎 Dein persönlicher Referral-Link
               </h3>
               <div style="background-color: #F8FAFF !important; border: 1px solid #E0E0E0 !important; border-radius: 8px; padding: 15px; font-family: 'Courier New', monospace; font-size: 14px; color: #333333 !important; word-break: break-all;">
-                http://localhost:${PORT}/?ref=${referralCode}
+                ${BASE_URL}/?ref=${referralCode}
               </div>
               <p style="color: #666666; font-size: 14px; margin: 15px 0 0 0;">
                 Teile diesen Link mit Freunden und steige in der Warteliste auf!
@@ -206,7 +207,7 @@ async function sendWelcomeEmailWithPosition(email, referralCode, position, nextJ
             
             <!-- CTA Button -->
             <div style="text-align: center; margin-bottom: 30px;">
-              <a href="http://localhost:${PORT}/?ref=${referralCode}" style="display: inline-block; background: #FF90BF; color: #ffffff; text-decoration: none; padding: 16px 32px; border-radius: 8px; font-weight: 600; font-size: 16px; box-shadow: 0 4px 6px rgba(255, 144, 191, 0.25);">
+              <a href="${BASE_URL}/?ref=${referralCode}" style="display: inline-block; background: #FF90BF; color: #ffffff; text-decoration: none; padding: 16px 32px; border-radius: 8px; font-weight: 600; font-size: 16px; box-shadow: 0 4px 6px rgba(255, 144, 191, 0.25);">
                 🚀 Jetzt Link teilen
               </a>
             </div>
@@ -297,7 +298,7 @@ async function sendPositionUpdateEmail(email, referralCode, position, jump) {
                 📎 Dein persönlicher Referral-Link
               </h3>
               <div style="background-color: #F8FAFF !important; border: 1px solid #E0E0E0 !important; border-radius: 8px; padding: 15px; font-family: 'Courier New', monospace; font-size: 14px; color: #333333 !important; word-break: break-all;">
-                http://localhost:${PORT}/?ref=${referralCode}
+                ${BASE_URL}/?ref=${referralCode}
               </div>
               <p style="color: #666666; font-size: 14px; margin: 15px 0 0 0;">
                 Teile diesen Link mit Freunden und steige weiter auf!
@@ -340,7 +341,7 @@ async function sendPositionUpdateEmail(email, referralCode, position, jump) {
             
             <!-- CTA Button -->
             <div style="text-align: center; margin-bottom: 30px;">
-              <a href="http://localhost:${PORT}/?ref=${referralCode}" style="display: inline-block; background: #FF90BF; color: #ffffff; text-decoration: none; padding: 16px 32px; border-radius: 8px; font-weight: 600; font-size: 16px; box-shadow: 0 4px 6px rgba(255, 144, 191, 0.25);">
+              <a href="${BASE_URL}/?ref=${referralCode}" style="display: inline-block; background: #FF90BF; color: #ffffff; text-decoration: none; padding: 16px 32px; border-radius: 8px; font-weight: 600; font-size: 16px; box-shadow: 0 4px 6px rgba(255, 144, 191, 0.25);">
                 🚀 Weiter teilen
               </a>
             </div>
@@ -447,7 +448,7 @@ async function sendFollowUpEmail(email, referralCode, position) {
                 🔗 Dein persönlicher Referral-Link
               </h3>
               <div style="background-color: #F8FAFF !important; border: 1px solid #E0E0E0 !important; border-radius: 8px; padding: 15px; font-family: 'Courier New', monospace; font-size: 14px; color: #333333 !important; word-break: break-all;">
-                http://localhost:${PORT}/?ref=${referralCode}
+                ${BASE_URL}/?ref=${referralCode}
               </div>
               <p style="color: #666666; font-size: 14px; margin: 15px 0 0 0;">
                 Teile diesen Link mit Freunden und verbessere deine Position
