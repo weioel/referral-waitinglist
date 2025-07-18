@@ -15,13 +15,33 @@ const apiInstance = new SibApiV3Sdk.TransactionalEmailsApi();
 
 const app = express();
 const PORT = process.env.PORT || 3003;
-const BASE_URL = process.env.BASE_URL || `http://localhost:${PORT}`;
+const BASE_URL = process.env.BASE_URL || (process.env.RAILWAY_STATIC_URL || `http://localhost:${PORT}`);
+
+// Debug logging für Railway
+console.log('🚀 Starting server...');
+console.log('📊 Environment variables:');
+console.log('  - PORT:', process.env.PORT || 'not set (using 3003)');
+console.log('  - BREVO_API_KEY:', process.env.BREVO_API_KEY ? 'set' : 'NOT SET');
+console.log('  - BREVO_SENDER_EMAIL:', process.env.BREVO_SENDER_EMAIL || 'not set');
+console.log('  - BREVO_SENDER_NAME:', process.env.BREVO_SENDER_NAME || 'not set');
+console.log('  - BASE_URL:', BASE_URL);
+console.log('  - RAILWAY_STATIC_URL:', process.env.RAILWAY_STATIC_URL || 'not set');
 
 // Middleware
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
+
+// Health check endpoint für Railway
+app.get('/health', (req, res) => {
+  res.json({ 
+    status: 'OK', 
+    timestamp: new Date().toISOString(),
+    port: PORT,
+    env: process.env.NODE_ENV || 'development'
+  });
+});
 
 // Datenbank initialisieren
 const db = new sqlite3.Database('./database.sqlite', (err) => {
