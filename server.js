@@ -17,16 +17,6 @@ const app = express();
 const PORT = process.env.PORT || 3003;
 const BASE_URL = process.env.BASE_URL || (process.env.RAILWAY_STATIC_URL || `http://localhost:${PORT}`);
 
-// Debug logging für Railway
-console.log('🚀 Starting server...');
-console.log('📊 Environment variables:');
-console.log('  - PORT:', process.env.PORT || 'not set (using 3003)');
-console.log('  - BREVO_API_KEY:', process.env.BREVO_API_KEY ? 'set' : 'NOT SET (using dummy)');
-console.log('  - BREVO_SENDER_EMAIL:', process.env.BREVO_SENDER_EMAIL || 'not set (using fallback)');
-console.log('  - BREVO_SENDER_NAME:', process.env.BREVO_SENDER_NAME || 'not set (using fallback)');
-console.log('  - BASE_URL:', BASE_URL);
-console.log('  - RAILWAY_STATIC_URL:', process.env.RAILWAY_STATIC_URL || 'not set');
-
 // Middleware
 app.use(cors());
 app.use(bodyParser.json());
@@ -47,10 +37,8 @@ app.get('/health', (req, res) => {
 const db = new sqlite3.Database('./database.sqlite', (err) => {
   if (err) {
     console.error('❌ Fehler beim Verbinden zur Datenbank:', err.message);
-    console.log('⚠️ Server startet ohne Datenbank - nur statische Dateien verfügbar');
   } else {
     console.log('✅ Erfolgreich mit SQLite Datenbank verbunden.');
-    // Nur initialisieren wenn Datenbankverbindung erfolgreich
     initializeDatabase();
   }
 });
@@ -750,14 +738,6 @@ function calculateNextJump(user, callback) {
 }
 
 /**
- * Route für alle übrigen Anfragen, um die index.html auszuliefern
- * Das ermöglicht client-seitiges Routing.
- */
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
-});
-
-/**
  * Test-Endpunkt: Follow-up E-Mail direkt senden
  */
 app.post('/api/test-followup', async (req, res) => {
@@ -792,13 +772,21 @@ app.post('/api/test-followup', async (req, res) => {
   }
 });
 
+/**
+ * Route für alle übrigen Anfragen, um die index.html auszuliefern
+ * Das ermöglicht client-seitiges Routing.
+ */
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+
 // Server starten
 app.listen(PORT, () => {
   console.log(`🚀 Server läuft auf http://localhost:${PORT}`);
   console.log(`🔗 Referral-Links Format: http://localhost:${PORT}/?ref=[referral-code]`);
   
-  // Starte Follow-up Timer
-  startFollowUpTimer();
+  // Follow-up Timer deaktiviert für Stabilität
+  // startFollowUpTimer();
 });
 
 /**
