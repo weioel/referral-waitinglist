@@ -46,9 +46,12 @@ app.get('/health', (req, res) => {
 // Datenbank initialisieren
 const db = new sqlite3.Database('./database.sqlite', (err) => {
   if (err) {
-    console.error('Fehler beim Verbinden zur Datenbank:', err.message);
+    console.error('❌ Fehler beim Verbinden zur Datenbank:', err.message);
+    console.log('⚠️ Server startet ohne Datenbank - nur statische Dateien verfügbar');
   } else {
-    console.log('Erfolgreich mit SQLite Datenbank verbunden.');
+    console.log('✅ Erfolgreich mit SQLite Datenbank verbunden.');
+    // Nur initialisieren wenn Datenbankverbindung erfolgreich
+    initializeDatabase();
   }
 });
 
