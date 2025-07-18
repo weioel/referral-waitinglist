@@ -10,7 +10,7 @@ require('dotenv').config();
 const SibApiV3Sdk = require('sib-api-v3-sdk');
 const defaultClient = SibApiV3Sdk.ApiClient.instance;
 const apiKey = defaultClient.authentications['api-key'];
-apiKey.apiKey = process.env.BREVO_API_KEY;
+apiKey.apiKey = process.env.BREVO_API_KEY || 'dummy-key-for-railway';
 const apiInstance = new SibApiV3Sdk.TransactionalEmailsApi();
 
 const app = express();
@@ -21,9 +21,9 @@ const BASE_URL = process.env.BASE_URL || (process.env.RAILWAY_STATIC_URL || `htt
 console.log('🚀 Starting server...');
 console.log('📊 Environment variables:');
 console.log('  - PORT:', process.env.PORT || 'not set (using 3003)');
-console.log('  - BREVO_API_KEY:', process.env.BREVO_API_KEY ? 'set' : 'NOT SET');
-console.log('  - BREVO_SENDER_EMAIL:', process.env.BREVO_SENDER_EMAIL || 'not set');
-console.log('  - BREVO_SENDER_NAME:', process.env.BREVO_SENDER_NAME || 'not set');
+console.log('  - BREVO_API_KEY:', process.env.BREVO_API_KEY ? 'set' : 'NOT SET (using dummy)');
+console.log('  - BREVO_SENDER_EMAIL:', process.env.BREVO_SENDER_EMAIL || 'not set (using fallback)');
+console.log('  - BREVO_SENDER_NAME:', process.env.BREVO_SENDER_NAME || 'not set (using fallback)');
 console.log('  - BASE_URL:', BASE_URL);
 console.log('  - RAILWAY_STATIC_URL:', process.env.RAILWAY_STATIC_URL || 'not set');
 
@@ -117,10 +117,16 @@ async function sendWelcomeEmail(email, referralCode) {
     
     sendSmtpEmail.sender = {
       name: process.env.BREVO_SENDER_NAME || "Warteliste",
-      email: process.env.BREVO_SENDER_EMAIL
+      email: process.env.BREVO_SENDER_EMAIL || "noreply@example.com"
     };
     
     sendSmtpEmail.to = [{ email: email }];
+    
+    // Prüfe ob API-Key vorhanden ist
+    if (!process.env.BREVO_API_KEY) {
+      console.log('⚠️ Kein API-Key gesetzt - E-Mail wird nicht gesendet an:', email);
+      return false;
+    }
     
     const result = await apiInstance.sendTransacEmail(sendSmtpEmail);
     console.log('Willkommens-E-Mail gesendet an:', email);
@@ -251,10 +257,16 @@ async function sendWelcomeEmailWithPosition(email, referralCode, position, nextJ
     
     sendSmtpEmail.sender = {
       name: process.env.BREVO_SENDER_NAME || "Warteliste",
-      email: process.env.BREVO_SENDER_EMAIL
+      email: process.env.BREVO_SENDER_EMAIL || "noreply@example.com"
     };
     
     sendSmtpEmail.to = [{ email: email }];
+    
+    // Prüfe ob API-Key vorhanden ist
+    if (!process.env.BREVO_API_KEY) {
+      console.log('⚠️ Kein API-Key gesetzt - E-Mail wird nicht gesendet an:', email);
+      return false;
+    }
     
     const result = await apiInstance.sendTransacEmail(sendSmtpEmail);
     console.log('Willkommens-E-Mail mit Position gesendet an:', email, 'Position:', position);
