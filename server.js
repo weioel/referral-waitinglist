@@ -789,71 +789,7 @@ app.listen(PORT, () => {
   // startFollowUpTimer();
 });
 
-/**
- * Timer für Follow-up E-Mails (alle 6 Stunden)
- */
-function startFollowUpTimer() {
-  console.log('⏰ Follow-up Timer gestartet - prüfe alle 6 Stunden auf 24h Follow-ups');
-  
-  // Sofort beim Start prüfen
-  checkAndSendFollowUps();
-  
-  // Dann alle 6 Stunden (6 * 60 * 60 * 1000 ms)
-  setInterval(checkAndSendFollowUps, 6 * 60 * 60 * 1000);
-}
-
-/**
- * Prüft und sendet Follow-up E-Mails für Benutzer, die vor 24h registriert wurden
- */
-async function checkAndSendFollowUps() {
-  console.log('🔍 Prüfe auf Follow-up E-Mails...');
-  
-  const query = `
-    SELECT email, referral_code, created_at 
-    FROM waitinglist 
-    WHERE followup_sent = 0 
-    AND datetime(created_at, '+24 hours') <= datetime('now')
-  `;
-  
-  db.all(query, [], async (err, rows) => {
-    if (err) {
-      console.error('Fehler beim Prüfen der Follow-up E-Mails:', err);
-      return;
-    }
-    
-    if (rows.length === 0) {
-      console.log('✅ Keine Follow-up E-Mails zu versenden');
-      return;
-    }
-    
-    console.log(`📧 Sende ${rows.length} Follow-up E-Mail(s)...`);
-    
-    for (const row of rows) {
-      try {
-        // Position berechnen
-        calculatePosition(row, async (position) => {
-          // Follow-up E-Mail senden
-          const success = await sendFollowUpEmail(row.email, row.referral_code, position);
-          
-          if (success) {
-            // Als versendet markieren
-            db.run('UPDATE waitinglist SET followup_sent = 1 WHERE email = ?', [row.email], (err) => {
-              if (err) {
-                console.error('Fehler beim Markieren der Follow-up E-Mail als versendet:', err);
-              }
-            });
-          }
-        });
-        
-        // Kurze Pause zwischen E-Mails
-        await new Promise(resolve => setTimeout(resolve, 1000));
-        
-      } catch (error) {
-        console.error('Fehler beim Senden der Follow-up E-Mail an:', row.email, error);
-      }
-    }
-  });
-}
+// Follow-up Timer Funktionen entfernt für Stabilität
 
 // Graceful Shutdown
 process.on('SIGINT', () => {
