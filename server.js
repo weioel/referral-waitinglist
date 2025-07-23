@@ -632,23 +632,26 @@ async function checkFollowUpEmails() {
   }
 }
 
-// Server starten
-app.listen(PORT, async () => {
-  console.log(`🚀 Server läuft auf Port ${PORT}`);
-  console.log(`🔗 Referral-Links Format: ${BASE_URL}/?ref=[referral-code]`);
-  
-  // Initialisiere Supabase Datenbank
-  await initializeDatabase();
-  
-  // Starte Follow-up Timer nur in Produktion
-  if (process.env.NODE_ENV === 'production') {
-    console.log('🕐 Follow-up E-Mail Timer gestartet (alle 6 Stunden)');
-    setInterval(checkFollowUpEmails, 6 * 60 * 60 * 1000); // Alle 6 Stunden
-  }
+// Initialisiere Datenbank beim Start
+initializeDatabase().then(() => {
+  console.log('🚀 Datenbank initialisiert');
+}).catch(err => {
+  console.error('❌ Fehler bei der Datenbankinitialisierung:', err);
 });
 
-// Graceful Shutdown
-process.on('SIGINT', () => {
-  console.log('Supabase Verbindung geschlossen.');
-    process.exit(0);
-}); 
+// Lokaler Server für Development
+if (process.env.NODE_ENV !== 'production' || !process.env.VERCEL) {
+  app.listen(PORT, () => {
+    console.log(`🚀 Server läuft auf Port ${PORT}`);
+    console.log(`🔗 Referral-Links Format: ${BASE_URL}/?ref=[referral-code]`);
+    
+    // Starte Follow-up Timer nur in lokaler Entwicklung
+    if (process.env.NODE_ENV === 'production') {
+      console.log('🕐 Follow-up E-Mail Timer gestartet (alle 6 Stunden)');
+      setInterval(checkFollowUpEmails, 6 * 60 * 60 * 1000); // Alle 6 Stunden
+    }
+  });
+}
+
+// Export für Vercel Serverless Functions
+module.exports = app;
