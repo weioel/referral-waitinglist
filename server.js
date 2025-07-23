@@ -88,10 +88,10 @@ async function initializeDatabase() {
  * E-Mail-Funktionen
  */
 async function sendWelcomeEmail(email, referralCode) {
-  // Development Mode: Keine E-Mails senden
+  // E-Mails werden immer versendet (auch im Development-Modus)
   if (!process.env.BREVO_API_KEY || process.env.BREVO_API_KEY === 'DEVELOPMENT_MODE_NO_EMAILS') {
-    console.log(`📧 [DEV] E-Mail würde gesendet an: ${email} (Referral: ${referralCode})`);
-    return true;
+    console.log(`❌ Kein Brevo API-Key gesetzt! Setze BREVO_API_KEY Environment Variable.`);
+    return false;
   }
   
   const referralLink = `${BASE_URL}/?ref=${referralCode}`;
@@ -128,10 +128,10 @@ async function sendWelcomeEmail(email, referralCode) {
 }
 
 async function sendWelcomeEmailWithPosition(email, referralCode, position, potentialJump) {
-  // Development Mode: Keine E-Mails senden
+  // E-Mails werden immer versendet (auch im Development-Modus)
   if (!process.env.BREVO_API_KEY || process.env.BREVO_API_KEY === 'DEVELOPMENT_MODE_NO_EMAILS') {
-    console.log(`📧 [DEV] Willkommens-E-Mail würde gesendet an: ${email} (Position: ${position + 1}, Sprung: ${potentialJump})`);
-    return true;
+    console.log(`❌ Kein Brevo API-Key gesetzt! Setze BREVO_API_KEY Environment Variable.`);
+    return false;
   }
   
   const referralLink = `${BASE_URL}/?ref=${referralCode}`;
@@ -152,7 +152,7 @@ async function sendWelcomeEmailWithPosition(email, referralCode, position, poten
       <p>Bis bald!<br>Das CultShare Team</p>
         </div>
   `;
-  sendSmtpEmail.sender = { "name": "CultShare", "email": process.env.BREVO_SENDER_EMAIL || "noreply@cultshare.app" };
+  sendSmtpEmail.sender = { "name": "CultShare", "email": process.env.BREVO_SENDER_EMAIL || "team@cultshare.app" };
   sendSmtpEmail.to = [{ "email": email }];
 
   try {
@@ -183,7 +183,7 @@ async function sendPositionUpdateEmail(email, referralCode, position, jump) {
       <p>Bis bald!<br>Das CultShare Team</p>
         </div>
   `;
-  sendSmtpEmail.sender = { "name": "CultShare", "email": process.env.BREVO_SENDER_EMAIL || "noreply@cultshare.app" };
+  sendSmtpEmail.sender = { "name": "CultShare", "email": process.env.BREVO_SENDER_EMAIL || "team@cultshare.app" };
   sendSmtpEmail.to = [{ "email": email }];
 
   try {
@@ -213,7 +213,7 @@ async function sendFollowUpEmail(email, referralCode, position) {
       <p>Bis bald!<br>Das CultShare Team</p>
         </div>
   `;
-  sendSmtpEmail.sender = { "name": "CultShare", "email": process.env.BREVO_SENDER_EMAIL || "noreply@cultshare.app" };
+  sendSmtpEmail.sender = { "name": "CultShare", "email": process.env.BREVO_SENDER_EMAIL || "team@cultshare.app" };
   sendSmtpEmail.to = [{ "email": email }];
 
   try {
