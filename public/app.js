@@ -265,7 +265,7 @@ class ReferralApp {
             const peopleAhead = this.currentUser.position;
             console.log('People ahead:', peopleAhead);
 
-            // Position anzeigen (Position + 1, da Position 0 = Platz 1 bedeutet)
+            // Position anzeigen (peopleAhead + 1 = Platz-Nummer)
             const displayPosition = peopleAhead + 1;
             this.animateNumber(this.elements.userPosition, displayPosition, 3000);
 
