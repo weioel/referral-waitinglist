@@ -265,12 +265,9 @@ class ReferralApp {
             const peopleAhead = this.currentUser.position;
             console.log('People ahead:', peopleAhead);
 
-            if (peopleAhead === 0) {
-                this.elements.userPosition.textContent = '#1';
-            } else {
-                // Slot-Machine-Effekt für die Zahl
-                this.animateNumber(this.elements.userPosition, peopleAhead, 3000);
-            }
+            // Position anzeigen (Position + 1, da Position 0 = Platz 1 bedeutet)
+            const displayPosition = peopleAhead + 1;
+            this.animateNumber(this.elements.userPosition, displayPosition, 3000);
 
             this.elements.userEmailInfo.textContent = this.currentUser.email;
             const referralLink = `${window.location.origin}/?ref=${this.currentUser.referralCode}`;

@@ -34,7 +34,8 @@ app.get('/health', (req, res) => {
 });
 
 // Datenbank initialisieren
-const db = new sqlite3.Database('./database.sqlite', (err) => {
+const dbPath = process.env.NODE_ENV === 'production' ? '/tmp/database.sqlite' : './database.sqlite';
+const db = new sqlite3.Database(dbPath, (err) => {
   if (err) {
     console.error('Fehler beim Verbinden zur Datenbank:', err.message);
   } else {
@@ -779,11 +780,15 @@ app.get('*', (req, res) => {
 
 // Server starten
 app.listen(PORT, () => {
-  console.log(`🚀 Server läuft auf http://localhost:${PORT}`);
-  console.log(`🔗 Referral-Links Format: http://localhost:${PORT}/?ref=[referral-code]`);
+  console.log(`🚀 Server läuft auf Port ${PORT}`);
+  console.log(`🔗 Referral-Links Format: ${BASE_URL}/?ref=[referral-code]`);
   
-  // Starte Follow-up Timer
-  startFollowUpTimer();
+  // Starte Follow-up Timer nur in Produktion
+  if (process.env.NODE_ENV === 'production') {
+    startFollowUpTimer();
+  } else {
+    console.log('⏰ Follow-up Timer deaktiviert in Development');
+  }
 });
 
 /**
