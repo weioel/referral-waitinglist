@@ -1,0 +1,18 @@
+# Supabase Konfiguration für .env Datei
+SUPABASE_URL=https://oqwqgvupmmgtgmkkovyq.supabase.co
+SUPABASE_SERVICE_ROLE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9xd3FndnVwbW1ndGdta2tvdnlxIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1MzI2MzUxNiwiZXhwIjoyMDY4ODM5NTE2fQ.PCp8NjZ3VXzykSSU2a3arNG8w9L79VSPnTbXr88v7H0
+SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9xd3FndnVwbW1ndGdta2tvdnlxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTMyNjM1MTYsImV4cCI6MjA2ODgzOTUxNn0.4KOeOJ23FCKp5s35vtciGFuE1dk_y7Ym604qhxGC5B0
+
+# E-Mail Konfiguration (Brevo)  
+BREVO_API_KEY=your-brevo-api-key-here
+BREVO_SENDER_NAME=Warteliste
+BREVO_SENDER_EMAIL=noreply@cultshare.app
+
+# Server Konfiguration
+NODE_ENV=development
+PORT=3003
+BASE_URL=http://localhost:3003
+
+# Für Railway Produktion:
+# NODE_ENV=production
+# BASE_URL=https://cultshare.app 

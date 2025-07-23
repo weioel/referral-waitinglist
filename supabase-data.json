@@ -1,0 +1,2927 @@
+[
+  {
+    "id": 1,
+    "email": "sarah.wagner@icloud.com",
+    "referral_code": "a8d235ff-b2f8-4d57-ab1a-bff06d1d401a",
+    "referred_by": null,
+    "created_at": "2025-05-23 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 2,
+    "email": "finn.bauer@yahoo.com",
+    "referral_code": "a28484c9-c731-46c5-a587-74469f9e15ca",
+    "referred_by": null,
+    "created_at": "2025-05-23 12:41:32",
+    "referral_count": 4,
+    "followup_sent": 1
+  },
+  {
+    "id": 3,
+    "email": "mia.becker@hotmail.de",
+    "referral_code": "14bae720-8cdf-45c2-8715-402b93001345",
+    "referred_by": null,
+    "created_at": "2025-05-23 12:41:32",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 4,
+    "email": "max.weber@outlook.com",
+    "referral_code": "8663e62d-1194-49f6-96e8-da81a9c4d7fa",
+    "referred_by": null,
+    "created_at": "2025-05-23 12:41:32",
+    "referral_count": 6,
+    "followup_sent": 1
+  },
+  {
+    "id": 5,
+    "email": "ben.meyer@gmx.de",
+    "referral_code": "1e32339a-df55-4421-97bb-725a09951e1d",
+    "referred_by": null,
+    "created_at": "2025-05-23 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 6,
+    "email": "tim.schröder@gmail.com",
+    "referral_code": "bda08c61-cc51-45e2-a762-d9a9d49122ea",
+    "referred_by": null,
+    "created_at": "2025-05-23 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 7,
+    "email": "paul.braun@gmx.de",
+    "referral_code": "de07d6f1-7813-430a-84ad-9922b24396cf",
+    "referred_by": null,
+    "created_at": "2025-05-23 12:41:32",
+    "referral_count": 3,
+    "followup_sent": 1
+  },
+  {
+    "id": 8,
+    "email": "elias.bauer@outlook.com",
+    "referral_code": "c495efc2-ec20-44d7-a147-138a7e99673c",
+    "referred_by": null,
+    "created_at": "2025-05-23 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 9,
+    "email": "tim.meyer@gmail.com",
+    "referral_code": "f6ad9381-cf0c-488d-b31c-19891bda60e1",
+    "referred_by": null,
+    "created_at": "2025-05-23 12:41:32",
+    "referral_count": 3,
+    "followup_sent": 1
+  },
+  {
+    "id": 10,
+    "email": "mia.meyer948@web.de",
+    "referral_code": "1473928c-0978-4b8e-a248-87ddbd8f828e",
+    "referred_by": null,
+    "created_at": "2025-05-23 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 11,
+    "email": "jonas.schmidt@web.de",
+    "referral_code": "ed2800a0-23e3-4091-bbe6-1c6f38105691",
+    "referred_by": null,
+    "created_at": "2025-05-23 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 12,
+    "email": "mia.bauer@gmail.com",
+    "referral_code": "12c19810-ee41-4c3a-bb51-e20cfaa98d0b",
+    "referred_by": null,
+    "created_at": "2025-05-23 12:41:32",
+    "referral_count": 2,
+    "followup_sent": 1
+  },
+  {
+    "id": 13,
+    "email": "julia.zimmermann@yahoo.com",
+    "referral_code": "0ba0ae3c-9d21-4473-b299-5b2784a5c0d7",
+    "referred_by": null,
+    "created_at": "2025-05-23 12:41:32",
+    "referral_count": 2,
+    "followup_sent": 1
+  },
+  {
+    "id": 14,
+    "email": "sarah.schwarz@outlook.com",
+    "referral_code": "28ca31ec-ed55-4dd4-a923-e2572a5c22ee",
+    "referred_by": null,
+    "created_at": "2025-05-24 12:41:32",
+    "referral_count": 5,
+    "followup_sent": 1
+  },
+  {
+    "id": 15,
+    "email": "max.schwarz398@gmail.com",
+    "referral_code": "d8bf2d69-2e00-4657-9e9f-2c76d97928f2",
+    "referred_by": null,
+    "created_at": "2025-05-24 12:41:32",
+    "referral_count": 3,
+    "followup_sent": 1
+  },
+  {
+    "id": 16,
+    "email": "max.koch@yahoo.com",
+    "referral_code": "07ccc312-8c25-4e78-9cf1-cf9b4d6284da",
+    "referred_by": null,
+    "created_at": "2025-05-24 12:41:32",
+    "referral_count": 3,
+    "followup_sent": 1
+  },
+  {
+    "id": 17,
+    "email": "noah.schwarz@gmx.de",
+    "referral_code": "59717db9-6698-42d2-a764-f34cdcd7d803",
+    "referred_by": null,
+    "created_at": "2025-05-24 12:41:32",
+    "referral_count": 2,
+    "followup_sent": 1
+  },
+  {
+    "id": 18,
+    "email": "ben.meyer@web.de",
+    "referral_code": "85399ed0-be7d-41f4-bff5-63dc1a7b6aea",
+    "referred_by": null,
+    "created_at": "2025-05-24 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 19,
+    "email": "lukas.schwarz@gmx.de",
+    "referral_code": "613403d5-c224-4049-94d5-a585a4b6a98e",
+    "referred_by": null,
+    "created_at": "2025-05-24 12:41:32",
+    "referral_count": 8,
+    "followup_sent": 1
+  },
+  {
+    "id": 20,
+    "email": "jonas.braun@gmail.com",
+    "referral_code": "88d71f84-d59e-4766-a1c5-6dd836a09784",
+    "referred_by": null,
+    "created_at": "2025-05-24 12:41:32",
+    "referral_count": 2,
+    "followup_sent": 1
+  },
+  {
+    "id": 21,
+    "email": "emma.meyer@outlook.com",
+    "referral_code": "e993eeea-4d1f-4b51-b89f-4b7947fa88e0",
+    "referred_by": null,
+    "created_at": "2025-05-24 12:41:32",
+    "referral_count": 2,
+    "followup_sent": 1
+  },
+  {
+    "id": 22,
+    "email": "marie.richter@outlook.com",
+    "referral_code": "b3625c89-3f95-41a9-a457-eda5cef3fcde",
+    "referred_by": null,
+    "created_at": "2025-05-24 12:41:32",
+    "referral_count": 6,
+    "followup_sent": 1
+  },
+  {
+    "id": 23,
+    "email": "ben.schwarz@yahoo.com",
+    "referral_code": "498a04cc-b849-4ffe-aaa1-9d3ac26e08ac",
+    "referred_by": null,
+    "created_at": "2025-05-25 12:41:32",
+    "referral_count": 3,
+    "followup_sent": 1
+  },
+  {
+    "id": 24,
+    "email": "elias.schröder671@yahoo.com",
+    "referral_code": "3e40d746-b92a-44db-9ed7-fb88838c3dc2",
+    "referred_by": null,
+    "created_at": "2025-05-25 12:41:32",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 25,
+    "email": "jonas.hoffmann@gmail.com",
+    "referral_code": "e022aa96-5825-4f01-9428-aad48eefb0c1",
+    "referred_by": null,
+    "created_at": "2025-05-25 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 26,
+    "email": "mia.müller466@outlook.com",
+    "referral_code": "e95bc203-1611-4b25-8a79-7b8bab634192",
+    "referred_by": null,
+    "created_at": "2025-05-25 12:41:32",
+    "referral_count": 3,
+    "followup_sent": 1
+  },
+  {
+    "id": 27,
+    "email": "lea.klein@yahoo.com",
+    "referral_code": "49f8561f-1995-4481-ae90-60981a7cc395",
+    "referred_by": null,
+    "created_at": "2025-05-25 12:41:32",
+    "referral_count": 2,
+    "followup_sent": 1
+  },
+  {
+    "id": 28,
+    "email": "laura.neumann@yahoo.com",
+    "referral_code": "0db0300d-8299-4dfa-a986-a520adadc2c2",
+    "referred_by": null,
+    "created_at": "2025-05-25 12:41:32",
+    "referral_count": 5,
+    "followup_sent": 1
+  },
+  {
+    "id": 29,
+    "email": "max.müller@web.de",
+    "referral_code": "8393b28c-26b1-4d6d-8226-10a9123d0f15",
+    "referred_by": null,
+    "created_at": "2025-05-25 12:41:32",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 30,
+    "email": "julia.meyer790@yahoo.com",
+    "referral_code": "11c556eb-cb7b-4449-8112-3ff8e67582b1",
+    "referred_by": null,
+    "created_at": "2025-05-25 12:41:32",
+    "referral_count": 4,
+    "followup_sent": 1
+  },
+  {
+    "id": 31,
+    "email": "noah.neumann@hotmail.de",
+    "referral_code": "5d27aff2-3682-43de-bcc5-61415376f516",
+    "referred_by": null,
+    "created_at": "2025-05-26 12:41:32",
+    "referral_count": 2,
+    "followup_sent": 1
+  },
+  {
+    "id": 32,
+    "email": "mia.müller@icloud.com",
+    "referral_code": "83841056-4e51-49fa-81e0-5fe8a8579849",
+    "referred_by": null,
+    "created_at": "2025-05-26 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 33,
+    "email": "mia.neumann133@web.de",
+    "referral_code": "333a259d-de17-4f66-bc7f-6ed1c54c9a00",
+    "referred_by": null,
+    "created_at": "2025-05-26 12:41:32",
+    "referral_count": 3,
+    "followup_sent": 1
+  },
+  {
+    "id": 34,
+    "email": "anna.wagner@icloud.com",
+    "referral_code": "351dda4b-0c57-4659-8ef0-3a53ab3ed9bf",
+    "referred_by": null,
+    "created_at": "2025-05-26 12:41:32",
+    "referral_count": 7,
+    "followup_sent": 1
+  },
+  {
+    "id": 35,
+    "email": "finn.schneider@outlook.com",
+    "referral_code": "5f096970-bb91-4548-ae28-4af7b268309f",
+    "referred_by": null,
+    "created_at": "2025-05-26 12:41:32",
+    "referral_count": 3,
+    "followup_sent": 1
+  },
+  {
+    "id": 36,
+    "email": "paul.neumann@yahoo.com",
+    "referral_code": "7529aaf3-57cd-4cfe-9290-ab2ed00f9351",
+    "referred_by": null,
+    "created_at": "2025-05-26 12:41:32",
+    "referral_count": 2,
+    "followup_sent": 1
+  },
+  {
+    "id": 37,
+    "email": "laura.schwarz@gmx.de",
+    "referral_code": "8ed0de7b-f727-4175-ac84-a168fa5aae34",
+    "referred_by": null,
+    "created_at": "2025-05-26 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 38,
+    "email": "emily.neumann@outlook.com",
+    "referral_code": "306a32d5-239e-4841-9714-022daf66aef0",
+    "referred_by": null,
+    "created_at": "2025-05-26 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 39,
+    "email": "julia.hoffmann672@outlook.com",
+    "referral_code": "4d04b489-33bb-4fab-a28a-8f1621cd7724",
+    "referred_by": null,
+    "created_at": "2025-05-27 12:41:32",
+    "referral_count": 2,
+    "followup_sent": 1
+  },
+  {
+    "id": 40,
+    "email": "finn.schmidt@icloud.com",
+    "referral_code": "1ed683bc-f117-44ae-b404-7b3b2599fd53",
+    "referred_by": null,
+    "created_at": "2025-05-27 12:41:32",
+    "referral_count": 2,
+    "followup_sent": 1
+  },
+  {
+    "id": 41,
+    "email": "tim.schneider@gmail.com",
+    "referral_code": "c84f17dd-05cb-41b6-9cbc-b6afe890df48",
+    "referred_by": null,
+    "created_at": "2025-05-27 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 42,
+    "email": "mia.weber@web.de",
+    "referral_code": "c5377308-07ad-41fb-8d54-e937c85340ac",
+    "referred_by": null,
+    "created_at": "2025-05-27 12:41:32",
+    "referral_count": 3,
+    "followup_sent": 1
+  },
+  {
+    "id": 43,
+    "email": "noah.braun@yahoo.com",
+    "referral_code": "607a745c-64f2-4c1d-987c-5924205c12b2",
+    "referred_by": null,
+    "created_at": "2025-05-27 12:41:32",
+    "referral_count": 6,
+    "followup_sent": 1
+  },
+  {
+    "id": 44,
+    "email": "lena.schwarz853@hotmail.de",
+    "referral_code": "95dd36c0-a267-4159-ba6e-8cfea71dc4df",
+    "referred_by": null,
+    "created_at": "2025-05-27 12:41:32",
+    "referral_count": 2,
+    "followup_sent": 1
+  },
+  {
+    "id": 45,
+    "email": "anna.schwarz331@icloud.com",
+    "referral_code": "49ba2e79-bcab-4aa3-9165-64a06c774724",
+    "referred_by": null,
+    "created_at": "2025-05-27 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 46,
+    "email": "leon.schwarz@hotmail.de",
+    "referral_code": "31da5080-dd49-4082-a579-345e894b8f3a",
+    "referred_by": null,
+    "created_at": "2025-05-27 12:41:32",
+    "referral_count": 4,
+    "followup_sent": 1
+  },
+  {
+    "id": 47,
+    "email": "julia.meyer@web.de",
+    "referral_code": "45d1b54a-f160-4796-bf18-751e9b01b132",
+    "referred_by": null,
+    "created_at": "2025-05-27 12:41:32",
+    "referral_count": 3,
+    "followup_sent": 1
+  },
+  {
+    "id": 48,
+    "email": "sarah.koch@outlook.com",
+    "referral_code": "dbaaa31b-d64e-4764-bc9d-714caaf4a0e7",
+    "referred_by": null,
+    "created_at": "2025-05-28 12:41:32",
+    "referral_count": 3,
+    "followup_sent": 1
+  },
+  {
+    "id": 49,
+    "email": "tim.richter@icloud.com",
+    "referral_code": "554cf946-ea4e-4f47-884e-81e862d3ddcd",
+    "referred_by": null,
+    "created_at": "2025-05-28 12:41:32",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 50,
+    "email": "leon.schwarz@yahoo.com",
+    "referral_code": "bf73a0d2-77ca-4a0c-bde0-54821718c8f9",
+    "referred_by": null,
+    "created_at": "2025-05-28 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 51,
+    "email": "leon.bauer@gmx.de",
+    "referral_code": "ddb0e0f1-038d-4d29-8a44-3f91d95e1c46",
+    "referred_by": null,
+    "created_at": "2025-05-28 12:41:32",
+    "referral_count": 2,
+    "followup_sent": 1
+  },
+  {
+    "id": 52,
+    "email": "tim.meyer@hotmail.de",
+    "referral_code": "0a1b677c-56d3-4d0e-960b-32d8352dc747",
+    "referred_by": null,
+    "created_at": "2025-05-28 12:41:32",
+    "referral_count": 3,
+    "followup_sent": 1
+  },
+  {
+    "id": 53,
+    "email": "elias.schäfer@yahoo.com",
+    "referral_code": "aa96dcee-e833-411c-8c66-e525f2dc7d0d",
+    "referred_by": null,
+    "created_at": "2025-05-28 12:41:32",
+    "referral_count": 6,
+    "followup_sent": 1
+  },
+  {
+    "id": 54,
+    "email": "anna.meyer@yahoo.com",
+    "referral_code": "832eeb77-7824-42cb-a692-efb2aa2f6554",
+    "referred_by": null,
+    "created_at": "2025-05-28 12:41:32",
+    "referral_count": 8,
+    "followup_sent": 1
+  },
+  {
+    "id": 55,
+    "email": "jonas.fischer@gmail.com",
+    "referral_code": "c43c5c04-d5f6-431c-a78f-34644ac74b8e",
+    "referred_by": null,
+    "created_at": "2025-05-28 12:41:32",
+    "referral_count": 3,
+    "followup_sent": 1
+  },
+  {
+    "id": 56,
+    "email": "mia.schäfer@hotmail.de",
+    "referral_code": "3f3257ce-079a-4ac0-9c11-d57152a3b2e7",
+    "referred_by": null,
+    "created_at": "2025-05-28 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 57,
+    "email": "jonas.wagner@yahoo.com",
+    "referral_code": "50b5c0fd-8c39-41f6-9fea-d51c7a6cf2ec",
+    "referred_by": null,
+    "created_at": "2025-05-29 12:41:32",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 58,
+    "email": "lena.schröder989@gmail.com",
+    "referral_code": "76d77e1f-4b73-46e9-ad46-22000a49be5a",
+    "referred_by": null,
+    "created_at": "2025-05-29 12:41:32",
+    "referral_count": 3,
+    "followup_sent": 1
+  },
+  {
+    "id": 59,
+    "email": "mia.meyer@hotmail.de",
+    "referral_code": "6dc9597c-e7e3-4417-9f5f-ad534ea37106",
+    "referred_by": null,
+    "created_at": "2025-05-29 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 60,
+    "email": "anna.fischer@gmx.de",
+    "referral_code": "603c8a15-25e3-4cab-8655-099070378b68",
+    "referred_by": null,
+    "created_at": "2025-05-29 12:41:32",
+    "referral_count": 2,
+    "followup_sent": 1
+  },
+  {
+    "id": 61,
+    "email": "jonas.schneider@yahoo.com",
+    "referral_code": "18a0d35e-e5e2-44da-9a98-dfd1dab9d5bd",
+    "referred_by": null,
+    "created_at": "2025-05-29 12:41:32",
+    "referral_count": 4,
+    "followup_sent": 1
+  },
+  {
+    "id": 62,
+    "email": "tim.hoffmann@web.de",
+    "referral_code": "7c61875b-c43b-4c18-b8c3-bff37df0d3b2",
+    "referred_by": null,
+    "created_at": "2025-05-29 12:41:32",
+    "referral_count": 3,
+    "followup_sent": 1
+  },
+  {
+    "id": 63,
+    "email": "paul.braun359@gmx.de",
+    "referral_code": "54ae87c9-bfd7-4cac-9e80-db29eba193ef",
+    "referred_by": null,
+    "created_at": "2025-05-29 12:41:32",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 64,
+    "email": "emily.schwarz@outlook.com",
+    "referral_code": "d7a98f14-8bc7-4c44-977e-c2a3f369f4fb",
+    "referred_by": null,
+    "created_at": "2025-05-29 12:41:32",
+    "referral_count": 5,
+    "followup_sent": 1
+  },
+  {
+    "id": 65,
+    "email": "emma.weber@gmail.com",
+    "referral_code": "2ff1a8f7-1a5d-475b-81d8-2ee767a2c3ad",
+    "referred_by": null,
+    "created_at": "2025-05-29 12:41:32",
+    "referral_count": 2,
+    "followup_sent": 1
+  },
+  {
+    "id": 66,
+    "email": "julia.wolf@gmail.com",
+    "referral_code": "9b56e163-6d94-4d68-8d1b-cd7225668fac",
+    "referred_by": null,
+    "created_at": "2025-05-30 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 67,
+    "email": "ben.wolf@gmx.de",
+    "referral_code": "fa039315-8006-4e3a-9956-bca73d23ee3f",
+    "referred_by": null,
+    "created_at": "2025-05-30 12:41:32",
+    "referral_count": 4,
+    "followup_sent": 1
+  },
+  {
+    "id": 68,
+    "email": "laura.braun@yahoo.com",
+    "referral_code": "2d15523f-fb57-4797-aa0a-6039e4c93e2f",
+    "referred_by": null,
+    "created_at": "2025-05-30 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 69,
+    "email": "elias.neumann973@yahoo.com",
+    "referral_code": "78ce39dc-2870-4ca4-b753-ec3e0ad26d5e",
+    "referred_by": null,
+    "created_at": "2025-05-30 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 70,
+    "email": "max.richter@outlook.com",
+    "referral_code": "50a96297-96f1-4cef-9e6d-252847848e6a",
+    "referred_by": null,
+    "created_at": "2025-05-30 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 71,
+    "email": "jonas.schmidt@icloud.com",
+    "referral_code": "55f5b762-da53-4c9d-9ad2-7884606194cd",
+    "referred_by": null,
+    "created_at": "2025-05-30 12:41:32",
+    "referral_count": 10,
+    "followup_sent": 1
+  },
+  {
+    "id": 72,
+    "email": "elias.richter@yahoo.com",
+    "referral_code": "d1c79d18-8dce-406e-8ba5-5c68908b1a36",
+    "referred_by": null,
+    "created_at": "2025-05-31 12:41:32",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 73,
+    "email": "laura.neumann@hotmail.de",
+    "referral_code": "9149f943-cc9f-4a5b-bfa7-e51c39bddd61",
+    "referred_by": null,
+    "created_at": "2025-05-31 12:41:32",
+    "referral_count": 4,
+    "followup_sent": 1
+  },
+  {
+    "id": 74,
+    "email": "noah.schneider@yahoo.com",
+    "referral_code": "b3af7424-b915-4e46-ba85-b493d0ad648c",
+    "referred_by": null,
+    "created_at": "2025-05-31 12:41:32",
+    "referral_count": 5,
+    "followup_sent": 1
+  },
+  {
+    "id": 75,
+    "email": "lukas.hoffmann@gmail.com",
+    "referral_code": "0c60eada-e3ee-4c8c-8f58-fd8e87c335fa",
+    "referred_by": null,
+    "created_at": "2025-05-31 12:41:32",
+    "referral_count": 7,
+    "followup_sent": 1
+  },
+  {
+    "id": 76,
+    "email": "finn.neumann@icloud.com",
+    "referral_code": "3443018d-7f5b-4466-a549-008f23e43466",
+    "referred_by": null,
+    "created_at": "2025-05-31 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 77,
+    "email": "leon.zimmermann940@outlook.com",
+    "referral_code": "40d356f3-3615-4956-a416-40ab157c564e",
+    "referred_by": null,
+    "created_at": "2025-05-31 12:41:32",
+    "referral_count": 3,
+    "followup_sent": 1
+  },
+  {
+    "id": 78,
+    "email": "emily.fischer@yahoo.com",
+    "referral_code": "4bbda21d-6160-4ad8-b5c5-86e1d66ea041",
+    "referred_by": null,
+    "created_at": "2025-05-31 12:41:32",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 79,
+    "email": "mia.schneider603@web.de",
+    "referral_code": "9fc2568a-058b-48c5-a29e-de6fcc26bd3f",
+    "referred_by": null,
+    "created_at": "2025-06-01 12:41:32",
+    "referral_count": 2,
+    "followup_sent": 1
+  },
+  {
+    "id": 80,
+    "email": "noah.fischer884@web.de",
+    "referral_code": "4ec1c472-aa45-470f-b6c2-747d41bebaf5",
+    "referred_by": null,
+    "created_at": "2025-06-01 12:41:32",
+    "referral_count": 3,
+    "followup_sent": 1
+  },
+  {
+    "id": 81,
+    "email": "anna.bauer@gmail.com",
+    "referral_code": "6ad430aa-79ee-4c62-93eb-06c4d1a2c441",
+    "referred_by": null,
+    "created_at": "2025-06-01 12:41:32",
+    "referral_count": 3,
+    "followup_sent": 1
+  },
+  {
+    "id": 82,
+    "email": "laura.richter@outlook.com",
+    "referral_code": "842c5dde-8d99-4e7f-812b-3981a8458cec",
+    "referred_by": null,
+    "created_at": "2025-06-01 12:41:32",
+    "referral_count": 2,
+    "followup_sent": 1
+  },
+  {
+    "id": 83,
+    "email": "finn.richter239@hotmail.de",
+    "referral_code": "6170832e-603a-4eb7-b43c-79cc847eb5a2",
+    "referred_by": null,
+    "created_at": "2025-06-01 12:41:32",
+    "referral_count": 10,
+    "followup_sent": 1
+  },
+  {
+    "id": 84,
+    "email": "mia.schwarz@yahoo.com",
+    "referral_code": "f3ff4c16-d221-4e0f-a92f-4e67b3b6be1f",
+    "referred_by": null,
+    "created_at": "2025-06-01 12:41:32",
+    "referral_count": 3,
+    "followup_sent": 1
+  },
+  {
+    "id": 85,
+    "email": "sarah.richter@web.de",
+    "referral_code": "39147aa7-4fb9-4d9a-b6e3-cc1b6e56a7c0",
+    "referred_by": null,
+    "created_at": "2025-06-01 12:41:32",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 86,
+    "email": "max.schmidt@gmx.de",
+    "referral_code": "480259f5-5295-4a13-9a67-6144fc722fcb",
+    "referred_by": null,
+    "created_at": "2025-06-01 12:41:32",
+    "referral_count": 2,
+    "followup_sent": 1
+  },
+  {
+    "id": 87,
+    "email": "tim.koch@outlook.com",
+    "referral_code": "48cd93df-f375-4290-b070-d0751a160cac",
+    "referred_by": null,
+    "created_at": "2025-06-01 12:41:32",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 88,
+    "email": "lea.neumann@web.de",
+    "referral_code": "984de8d6-712e-4339-8e7a-e127de232704",
+    "referred_by": null,
+    "created_at": "2025-06-01 12:41:32",
+    "referral_count": 3,
+    "followup_sent": 1
+  },
+  {
+    "id": 89,
+    "email": "sarah.schwarz@yahoo.com",
+    "referral_code": "ecfdf52c-2e03-40b4-b22b-b7072a113419",
+    "referred_by": null,
+    "created_at": "2025-06-02 12:41:32",
+    "referral_count": 5,
+    "followup_sent": 1
+  },
+  {
+    "id": 90,
+    "email": "sarah.schäfer@gmx.de",
+    "referral_code": "a0a348b6-d7c2-4ef5-9434-28871d449583",
+    "referred_by": null,
+    "created_at": "2025-06-02 12:41:32",
+    "referral_count": 5,
+    "followup_sent": 1
+  },
+  {
+    "id": 91,
+    "email": "laura.schwarz@outlook.com",
+    "referral_code": "96533882-6b67-49ee-a5e9-eaf9dd4f9fc2",
+    "referred_by": null,
+    "created_at": "2025-06-02 12:41:32",
+    "referral_count": 4,
+    "followup_sent": 1
+  },
+  {
+    "id": 92,
+    "email": "emily.weber203@gmail.com",
+    "referral_code": "1e2f4f94-f3f7-406b-a9b7-ea4e89a839d8",
+    "referred_by": null,
+    "created_at": "2025-06-02 12:41:32",
+    "referral_count": 5,
+    "followup_sent": 1
+  },
+  {
+    "id": 93,
+    "email": "paul.becker@icloud.com",
+    "referral_code": "17e02b2e-98b1-432a-96c1-680deb3f5d95",
+    "referred_by": null,
+    "created_at": "2025-06-02 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 94,
+    "email": "finn.schwarz@hotmail.de",
+    "referral_code": "724134cb-1cce-4e01-98e4-aa61c1665ccb",
+    "referred_by": null,
+    "created_at": "2025-06-02 12:41:32",
+    "referral_count": 8,
+    "followup_sent": 1
+  },
+  {
+    "id": 95,
+    "email": "finn.zimmermann@yahoo.com",
+    "referral_code": "221db9e8-2b12-461e-938d-903e4f685bec",
+    "referred_by": null,
+    "created_at": "2025-06-02 12:41:32",
+    "referral_count": 4,
+    "followup_sent": 1
+  },
+  {
+    "id": 96,
+    "email": "lena.bauer901@yahoo.com",
+    "referral_code": "caa2bad8-5a44-4678-9c1b-018c59618e81",
+    "referred_by": null,
+    "created_at": "2025-06-02 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 97,
+    "email": "noah.richter24@gmail.com",
+    "referral_code": "1de044f8-ca59-44e8-b814-d9b152e9445a",
+    "referred_by": null,
+    "created_at": "2025-06-03 12:41:32",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 98,
+    "email": "jonas.schwarz@outlook.com",
+    "referral_code": "389f5041-3534-44de-8cd1-c3a195ca25b1",
+    "referred_by": null,
+    "created_at": "2025-06-03 12:41:32",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 99,
+    "email": "jonas.becker@yahoo.com",
+    "referral_code": "756f09f6-2258-4f63-a15d-a49df7529f9d",
+    "referred_by": null,
+    "created_at": "2025-06-03 12:41:32",
+    "referral_count": 2,
+    "followup_sent": 1
+  },
+  {
+    "id": 100,
+    "email": "leon.richter@outlook.com",
+    "referral_code": "8a09d880-46b7-47be-9092-1b3b2b2061d6",
+    "referred_by": null,
+    "created_at": "2025-06-03 12:41:32",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 101,
+    "email": "noah.schwarz@outlook.com",
+    "referral_code": "a25efd85-f198-47d7-9f23-324fe298d9f2",
+    "referred_by": null,
+    "created_at": "2025-06-03 12:41:32",
+    "referral_count": 4,
+    "followup_sent": 1
+  },
+  {
+    "id": 102,
+    "email": "emily.bauer@hotmail.de",
+    "referral_code": "16dfa294-26ce-4155-8882-281fafcb7e5c",
+    "referred_by": null,
+    "created_at": "2025-06-03 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 103,
+    "email": "anna.weber@hotmail.de",
+    "referral_code": "52be4a2d-432b-43ee-a954-e91f766bdb00",
+    "referred_by": null,
+    "created_at": "2025-06-03 12:41:32",
+    "referral_count": 2,
+    "followup_sent": 1
+  },
+  {
+    "id": 104,
+    "email": "sarah.richter@outlook.com",
+    "referral_code": "37dbf7d2-7d5c-4e25-8ce5-006aaafe18d3",
+    "referred_by": null,
+    "created_at": "2025-06-04 12:41:32",
+    "referral_count": 2,
+    "followup_sent": 1
+  },
+  {
+    "id": 105,
+    "email": "lea.zimmermann@yahoo.com",
+    "referral_code": "5e577f30-9f97-4c45-ab20-361c76065b01",
+    "referred_by": null,
+    "created_at": "2025-06-04 12:41:32",
+    "referral_count": 3,
+    "followup_sent": 1
+  },
+  {
+    "id": 106,
+    "email": "emily.richter@outlook.com",
+    "referral_code": "85344401-6e5d-4043-aa53-aa71a471f3bf",
+    "referred_by": null,
+    "created_at": "2025-06-04 12:41:32",
+    "referral_count": 2,
+    "followup_sent": 1
+  },
+  {
+    "id": 107,
+    "email": "elias.wolf@web.de",
+    "referral_code": "8931b1d8-79e4-4504-9dfb-bbaf122ae13b",
+    "referred_by": null,
+    "created_at": "2025-06-04 12:41:32",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 108,
+    "email": "emma.meyer90@gmail.com",
+    "referral_code": "cdcafc0c-7074-4c6e-b4d8-6f41b7229e28",
+    "referred_by": null,
+    "created_at": "2025-06-04 12:41:32",
+    "referral_count": 3,
+    "followup_sent": 1
+  },
+  {
+    "id": 109,
+    "email": "anna.neumann@gmail.com",
+    "referral_code": "bfe840e5-5b24-4e6e-95ac-45c8bb9c3ed0",
+    "referred_by": null,
+    "created_at": "2025-06-04 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 110,
+    "email": "ben.neumann317@web.de",
+    "referral_code": "2f4342e2-365c-4094-9f67-39c65a9b45ce",
+    "referred_by": null,
+    "created_at": "2025-06-04 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 111,
+    "email": "sarah.braun@gmail.com",
+    "referral_code": "7bf816ca-ba0c-4ee6-8c42-584e2cadddc9",
+    "referred_by": null,
+    "created_at": "2025-06-04 12:41:32",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 112,
+    "email": "jonas.neumann@gmail.com",
+    "referral_code": "1ace1652-b2be-49b2-90ab-5668a91f3d50",
+    "referred_by": null,
+    "created_at": "2025-06-04 12:41:32",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 113,
+    "email": "marie.richter@gmx.de",
+    "referral_code": "a75e541c-d81d-4b36-b2c4-b3a7fa323d0c",
+    "referred_by": null,
+    "created_at": "2025-06-04 12:41:32",
+    "referral_count": 4,
+    "followup_sent": 1
+  },
+  {
+    "id": 114,
+    "email": "laura.müller@yahoo.com",
+    "referral_code": "037a6b1d-70a6-4cf4-b2df-a8dcd0c5caf6",
+    "referred_by": null,
+    "created_at": "2025-06-04 12:41:32",
+    "referral_count": 5,
+    "followup_sent": 1
+  },
+  {
+    "id": 115,
+    "email": "jonas.meyer@web.de",
+    "referral_code": "88624521-4f7b-4eec-a004-95d1e90ce541",
+    "referred_by": null,
+    "created_at": "2025-06-04 12:41:32",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 116,
+    "email": "lea.meyer@gmx.de",
+    "referral_code": "e37cb921-1864-44d6-b33e-da247ebfca31",
+    "referred_by": null,
+    "created_at": "2025-06-05 12:41:32",
+    "referral_count": 2,
+    "followup_sent": 1
+  },
+  {
+    "id": 117,
+    "email": "laura.schwarz@gmail.com",
+    "referral_code": "624e3d23-eb2e-4489-afd6-f26b9eb108dd",
+    "referred_by": null,
+    "created_at": "2025-06-05 12:41:32",
+    "referral_count": 8,
+    "followup_sent": 1
+  },
+  {
+    "id": 118,
+    "email": "ben.zimmermann845@gmail.com",
+    "referral_code": "61a6df12-dab6-4b13-a4d7-5924a826e16f",
+    "referred_by": null,
+    "created_at": "2025-06-05 12:41:32",
+    "referral_count": 3,
+    "followup_sent": 1
+  },
+  {
+    "id": 119,
+    "email": "finn.weber388@gmail.com",
+    "referral_code": "e0bd2591-2c36-4fbc-b617-f6bb59d4bb53",
+    "referred_by": null,
+    "created_at": "2025-06-05 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 120,
+    "email": "tim.schäfer@web.de",
+    "referral_code": "fe14f2ed-c4fa-4551-84a5-b8473d9432a4",
+    "referred_by": null,
+    "created_at": "2025-06-05 12:41:32",
+    "referral_count": 3,
+    "followup_sent": 1
+  },
+  {
+    "id": 121,
+    "email": "mia.zimmermann@gmail.com",
+    "referral_code": "f306174c-7d2b-4864-bf25-4708b6d2f8b9",
+    "referred_by": null,
+    "created_at": "2025-06-05 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 122,
+    "email": "emma.bauer@hotmail.de",
+    "referral_code": "1df5ba91-d9f0-4ab7-89f8-ed3ceca09ce2",
+    "referred_by": null,
+    "created_at": "2025-06-05 12:41:32",
+    "referral_count": 3,
+    "followup_sent": 1
+  },
+  {
+    "id": 123,
+    "email": "noah.müller@gmail.com",
+    "referral_code": "e10f9f8e-a045-4cff-8992-256d02d36f3e",
+    "referred_by": null,
+    "created_at": "2025-06-05 12:41:32",
+    "referral_count": 4,
+    "followup_sent": 1
+  },
+  {
+    "id": 124,
+    "email": "emily.koch@yahoo.com",
+    "referral_code": "30ad73fd-40ab-4f86-9c0b-f7c8b35943b7",
+    "referred_by": null,
+    "created_at": "2025-06-05 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 125,
+    "email": "julia.bauer@web.de",
+    "referral_code": "c2df01d3-c56c-42be-b8a1-ebca7091434e",
+    "referred_by": null,
+    "created_at": "2025-06-05 12:41:32",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 126,
+    "email": "ben.zimmermann@gmail.com",
+    "referral_code": "ffdb3c12-320a-4ead-a6de-f77d39ab86ea",
+    "referred_by": null,
+    "created_at": "2025-06-05 12:41:32",
+    "referral_count": 2,
+    "followup_sent": 1
+  },
+  {
+    "id": 127,
+    "email": "noah.schröder819@hotmail.de",
+    "referral_code": "58109da1-d9df-4fb0-b9f9-eda3508f7cfd",
+    "referred_by": null,
+    "created_at": "2025-06-05 12:41:32",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 128,
+    "email": "julia.schröder@hotmail.de",
+    "referral_code": "bf2dfb3b-0784-45d1-a0fc-82f549f0149f",
+    "referred_by": null,
+    "created_at": "2025-06-06 12:41:32",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 129,
+    "email": "emily.zimmermann905@gmx.de",
+    "referral_code": "4f0f856a-dc1e-468b-a834-d9b2b497a88a",
+    "referred_by": null,
+    "created_at": "2025-06-06 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 130,
+    "email": "mia.klein@yahoo.com",
+    "referral_code": "34eae919-4c2a-4bf7-ba36-8ed3cad2307e",
+    "referred_by": null,
+    "created_at": "2025-06-06 12:41:32",
+    "referral_count": 5,
+    "followup_sent": 1
+  },
+  {
+    "id": 131,
+    "email": "mia.weber@hotmail.de",
+    "referral_code": "e3366582-1f5e-4b9c-b9c8-af75ff138cef",
+    "referred_by": null,
+    "created_at": "2025-06-06 12:41:32",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 132,
+    "email": "lea.weber@yahoo.com",
+    "referral_code": "0d6400e9-289d-4793-8b2b-dde72d2c5a36",
+    "referred_by": null,
+    "created_at": "2025-06-06 12:41:32",
+    "referral_count": 5,
+    "followup_sent": 1
+  },
+  {
+    "id": 133,
+    "email": "anna.schmidt@web.de",
+    "referral_code": "ae0e5302-31ec-4074-aa31-e68492452229",
+    "referred_by": null,
+    "created_at": "2025-06-06 12:41:32",
+    "referral_count": 2,
+    "followup_sent": 1
+  },
+  {
+    "id": 134,
+    "email": "sarah.becker@hotmail.de",
+    "referral_code": "2641337d-28e9-4b23-995e-558c0f855bd1",
+    "referred_by": null,
+    "created_at": "2025-06-06 12:41:32",
+    "referral_count": 5,
+    "followup_sent": 1
+  },
+  {
+    "id": 135,
+    "email": "emily.wagner@gmx.de",
+    "referral_code": "79ebfec3-9b1a-4bfe-ad6c-f1a004cae411",
+    "referred_by": null,
+    "created_at": "2025-06-06 12:41:32",
+    "referral_count": 8,
+    "followup_sent": 1
+  },
+  {
+    "id": 136,
+    "email": "finn.schmidt@web.de",
+    "referral_code": "c72e3cff-f711-473c-9608-3c05d408f6b2",
+    "referred_by": null,
+    "created_at": "2025-06-06 12:41:32",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 137,
+    "email": "anna.wolf@yahoo.com",
+    "referral_code": "cccbc224-f491-4104-b084-a2efbca8a793",
+    "referred_by": null,
+    "created_at": "2025-06-06 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 138,
+    "email": "mia.braun@hotmail.de",
+    "referral_code": "8b523bb1-f1cd-4803-b817-cbef2bd48b17",
+    "referred_by": null,
+    "created_at": "2025-06-06 12:41:32",
+    "referral_count": 3,
+    "followup_sent": 1
+  },
+  {
+    "id": 139,
+    "email": "max.becker@icloud.com",
+    "referral_code": "d2e15b0f-dee4-4917-83ac-dd9932f4a11c",
+    "referred_by": null,
+    "created_at": "2025-06-06 12:41:32",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 140,
+    "email": "paul.zimmermann@icloud.com",
+    "referral_code": "e30796b7-4321-4be6-a5a1-959068ac9137",
+    "referred_by": null,
+    "created_at": "2025-06-06 12:41:32",
+    "referral_count": 4,
+    "followup_sent": 1
+  },
+  {
+    "id": 141,
+    "email": "ben.schmidt@hotmail.de",
+    "referral_code": "6fcfe9c2-1b7a-4ffd-950d-acdf86928c8a",
+    "referred_by": null,
+    "created_at": "2025-06-06 12:41:32",
+    "referral_count": 8,
+    "followup_sent": 1
+  },
+  {
+    "id": 142,
+    "email": "laura.klein@hotmail.de",
+    "referral_code": "8ff0ab26-0ce6-409e-a4f6-c9674f0bfe93",
+    "referred_by": null,
+    "created_at": "2025-06-06 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 143,
+    "email": "lukas.schwarz@web.de",
+    "referral_code": "b1d62b37-fae3-4809-a5a4-6cf3b9123e3e",
+    "referred_by": null,
+    "created_at": "2025-06-06 12:41:32",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 144,
+    "email": "emily.wagner203@icloud.com",
+    "referral_code": "443d64a2-8811-48b3-aea5-38fb6aee0031",
+    "referred_by": null,
+    "created_at": "2025-06-07 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 145,
+    "email": "julia.hoffmann801@web.de",
+    "referral_code": "d9127718-a862-4aee-82ae-ed10162dff5d",
+    "referred_by": null,
+    "created_at": "2025-06-07 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 146,
+    "email": "noah.neumann@icloud.com",
+    "referral_code": "82005827-2012-48c4-a07c-268317959178",
+    "referred_by": null,
+    "created_at": "2025-06-07 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 147,
+    "email": "anna.neumann331@gmx.de",
+    "referral_code": "12840966-63e0-48a7-989f-92c1edaf5015",
+    "referred_by": null,
+    "created_at": "2025-06-07 12:41:32",
+    "referral_count": 6,
+    "followup_sent": 1
+  },
+  {
+    "id": 148,
+    "email": "leon.becker@gmx.de",
+    "referral_code": "d837eaae-9234-46c3-a39f-b7d246f259c6",
+    "referred_by": null,
+    "created_at": "2025-06-07 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 149,
+    "email": "ben.becker@gmail.com",
+    "referral_code": "96bbd862-6dd7-4126-9432-8d19b54a829c",
+    "referred_by": null,
+    "created_at": "2025-06-07 12:41:32",
+    "referral_count": 3,
+    "followup_sent": 1
+  },
+  {
+    "id": 150,
+    "email": "lena.müller@web.de",
+    "referral_code": "9b81da6f-5d89-4f61-b860-6e03ad0b75c8",
+    "referred_by": null,
+    "created_at": "2025-06-07 12:41:32",
+    "referral_count": 3,
+    "followup_sent": 1
+  },
+  {
+    "id": 151,
+    "email": "lea.meyer@gmail.com",
+    "referral_code": "368cac5f-0061-4f37-ad20-d1fb9fa91df9",
+    "referred_by": null,
+    "created_at": "2025-06-07 12:41:32",
+    "referral_count": 4,
+    "followup_sent": 1
+  },
+  {
+    "id": 152,
+    "email": "julia.weber@web.de",
+    "referral_code": "744b7abc-0bd8-4d93-879a-aabcf894fd10",
+    "referred_by": null,
+    "created_at": "2025-06-07 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 153,
+    "email": "elias.zimmermann@outlook.com",
+    "referral_code": "8b15c9dd-97e2-4705-ad70-1669602b9bd6",
+    "referred_by": null,
+    "created_at": "2025-06-07 12:41:32",
+    "referral_count": 8,
+    "followup_sent": 1
+  },
+  {
+    "id": 154,
+    "email": "elias.klein785@gmx.de",
+    "referral_code": "d9f91c70-7bcf-46ad-8dd4-8feace3b0412",
+    "referred_by": null,
+    "created_at": "2025-06-07 12:41:32",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 155,
+    "email": "sarah.schwarz@web.de",
+    "referral_code": "522f9480-88fe-4203-8992-a128ad4a7d80",
+    "referred_by": null,
+    "created_at": "2025-06-07 12:41:32",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 156,
+    "email": "ben.neumann@gmail.com",
+    "referral_code": "2fd9f2c8-8630-4311-aec1-6edf396155b3",
+    "referred_by": null,
+    "created_at": "2025-06-07 12:41:32",
+    "referral_count": 3,
+    "followup_sent": 1
+  },
+  {
+    "id": 157,
+    "email": "finn.schröder747@web.de",
+    "referral_code": "c04f25e7-cd3c-446d-8104-6eecc885134e",
+    "referred_by": null,
+    "created_at": "2025-06-07 12:41:32",
+    "referral_count": 2,
+    "followup_sent": 1
+  },
+  {
+    "id": 158,
+    "email": "jonas.braun575@web.de",
+    "referral_code": "7300f173-5cc1-4323-afb1-7f51a2a94daf",
+    "referred_by": null,
+    "created_at": "2025-06-07 12:41:32",
+    "referral_count": 5,
+    "followup_sent": 1
+  },
+  {
+    "id": 159,
+    "email": "marie.wolf707@yahoo.com",
+    "referral_code": "407f8715-2732-402e-861c-c9be225b776e",
+    "referred_by": null,
+    "created_at": "2025-06-07 12:41:32",
+    "referral_count": 5,
+    "followup_sent": 1
+  },
+  {
+    "id": 160,
+    "email": "julia.müller@gmx.de",
+    "referral_code": "9e3b55a0-0fa3-458a-8736-08d3cc7821b1",
+    "referred_by": null,
+    "created_at": "2025-06-08 12:41:32",
+    "referral_count": 10,
+    "followup_sent": 1
+  },
+  {
+    "id": 161,
+    "email": "elias.braun434@yahoo.com",
+    "referral_code": "04f41e02-5e71-4967-b119-53e0df6610a7",
+    "referred_by": null,
+    "created_at": "2025-06-08 12:41:32",
+    "referral_count": 2,
+    "followup_sent": 1
+  },
+  {
+    "id": 162,
+    "email": "laura.schmidt870@web.de",
+    "referral_code": "ede9232f-8dba-47ff-b35d-3d773377205a",
+    "referred_by": null,
+    "created_at": "2025-06-08 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 163,
+    "email": "laura.becker@outlook.com",
+    "referral_code": "8bb31566-138c-4028-afa7-a736b23554c1",
+    "referred_by": null,
+    "created_at": "2025-06-08 12:41:32",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 164,
+    "email": "sarah.wolf@gmail.com",
+    "referral_code": "743bf05a-62da-4164-a2f5-40ce3cfa7658",
+    "referred_by": null,
+    "created_at": "2025-06-08 12:41:32",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 165,
+    "email": "lea.schneider@icloud.com",
+    "referral_code": "cd4b1569-4324-4ceb-849e-d03834f231bc",
+    "referred_by": null,
+    "created_at": "2025-06-08 12:41:32",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 166,
+    "email": "mia.schröder@yahoo.com",
+    "referral_code": "9363b241-4977-4851-a949-5e4a377b3b9d",
+    "referred_by": null,
+    "created_at": "2025-06-08 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 167,
+    "email": "julia.zimmermann@web.de",
+    "referral_code": "98340f0a-0c92-473c-b9b8-2fa69c25e8b0",
+    "referred_by": null,
+    "created_at": "2025-06-09 12:41:32",
+    "referral_count": 3,
+    "followup_sent": 1
+  },
+  {
+    "id": 168,
+    "email": "elias.müller@hotmail.de",
+    "referral_code": "7064a8dd-a191-48f4-bf52-84cef29e53ab",
+    "referred_by": null,
+    "created_at": "2025-06-09 12:41:32",
+    "referral_count": 7,
+    "followup_sent": 1
+  },
+  {
+    "id": 169,
+    "email": "emma.becker@outlook.com",
+    "referral_code": "534fa895-d266-428b-b4cb-6ee5a0088bc0",
+    "referred_by": null,
+    "created_at": "2025-06-09 12:41:32",
+    "referral_count": 5,
+    "followup_sent": 1
+  },
+  {
+    "id": 170,
+    "email": "max.wagner631@hotmail.de",
+    "referral_code": "edb160d1-67e0-4929-be50-f82b74a7429b",
+    "referred_by": null,
+    "created_at": "2025-06-09 12:41:32",
+    "referral_count": 3,
+    "followup_sent": 1
+  },
+  {
+    "id": 171,
+    "email": "max.schäfer@icloud.com",
+    "referral_code": "1142d9a1-8b10-4b6a-a46b-213a1d37454b",
+    "referred_by": null,
+    "created_at": "2025-06-09 12:41:32",
+    "referral_count": 7,
+    "followup_sent": 1
+  },
+  {
+    "id": 172,
+    "email": "emily.braun@yahoo.com",
+    "referral_code": "4ab18075-b11a-4e90-91e9-76da7e1245f0",
+    "referred_by": null,
+    "created_at": "2025-06-09 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 173,
+    "email": "emma.hoffmann@web.de",
+    "referral_code": "a2585086-70d4-4537-a6b1-17cbcb16d507",
+    "referred_by": null,
+    "created_at": "2025-06-09 12:41:32",
+    "referral_count": 2,
+    "followup_sent": 1
+  },
+  {
+    "id": 174,
+    "email": "marie.müller@gmail.com",
+    "referral_code": "3be41a8d-02f2-425c-bfab-0d98ad96b718",
+    "referred_by": null,
+    "created_at": "2025-06-09 12:41:32",
+    "referral_count": 6,
+    "followup_sent": 1
+  },
+  {
+    "id": 175,
+    "email": "sarah.schwarz@icloud.com",
+    "referral_code": "3bc1f178-6008-4ba6-8fed-df985146f7ca",
+    "referred_by": null,
+    "created_at": "2025-06-09 12:41:32",
+    "referral_count": 2,
+    "followup_sent": 1
+  },
+  {
+    "id": 176,
+    "email": "anna.klein@icloud.com",
+    "referral_code": "4aed477f-4acb-44f5-9897-dc2acdc0bbc8",
+    "referred_by": null,
+    "created_at": "2025-06-10 12:41:32",
+    "referral_count": 2,
+    "followup_sent": 1
+  },
+  {
+    "id": 177,
+    "email": "leon.zimmermann@icloud.com",
+    "referral_code": "0a91cda1-f7ef-485f-a307-9d548cc0fa70",
+    "referred_by": null,
+    "created_at": "2025-06-10 12:41:32",
+    "referral_count": 4,
+    "followup_sent": 1
+  },
+  {
+    "id": 178,
+    "email": "julia.schwarz@gmx.de",
+    "referral_code": "842465d5-66b5-4723-8415-6d3aeb61acf9",
+    "referred_by": null,
+    "created_at": "2025-06-10 12:41:32",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 179,
+    "email": "anna.zimmermann@web.de",
+    "referral_code": "b79375ea-0dac-4ef7-9aee-7985972fada3",
+    "referred_by": null,
+    "created_at": "2025-06-10 12:41:32",
+    "referral_count": 6,
+    "followup_sent": 1
+  },
+  {
+    "id": 180,
+    "email": "mia.becker@gmail.com",
+    "referral_code": "95da2090-544c-4561-a584-92a75f18efe8",
+    "referred_by": null,
+    "created_at": "2025-06-10 12:41:32",
+    "referral_count": 7,
+    "followup_sent": 1
+  },
+  {
+    "id": 181,
+    "email": "jonas.bauer@outlook.com",
+    "referral_code": "7e9aff03-2b92-4105-92ae-65770fc5cae1",
+    "referred_by": null,
+    "created_at": "2025-06-10 12:41:32",
+    "referral_count": 8,
+    "followup_sent": 1
+  },
+  {
+    "id": 182,
+    "email": "emma.braun268@icloud.com",
+    "referral_code": "d1416947-b27f-4c34-8e46-d11f315df115",
+    "referred_by": null,
+    "created_at": "2025-06-10 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 183,
+    "email": "leon.schneider@yahoo.com",
+    "referral_code": "0c9913dd-c556-416c-9313-e49a82c47f6e",
+    "referred_by": null,
+    "created_at": "2025-06-10 12:41:32",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 184,
+    "email": "marie.müller@hotmail.de",
+    "referral_code": "75de9e64-c381-4140-ba65-5a9a6bbc7055",
+    "referred_by": null,
+    "created_at": "2025-06-10 12:41:32",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 185,
+    "email": "laura.koch@yahoo.com",
+    "referral_code": "6f52ba38-eb61-4a3b-a47f-95a9430b6319",
+    "referred_by": null,
+    "created_at": "2025-06-10 12:41:32",
+    "referral_count": 2,
+    "followup_sent": 1
+  },
+  {
+    "id": 186,
+    "email": "lukas.schäfer@web.de",
+    "referral_code": "7a5c54e8-b95f-4274-9a9c-33bbf0b086ec",
+    "referred_by": null,
+    "created_at": "2025-06-10 12:41:32",
+    "referral_count": 2,
+    "followup_sent": 1
+  },
+  {
+    "id": 187,
+    "email": "emma.wolf@icloud.com",
+    "referral_code": "2bebf184-511e-4eb1-a4e9-295934ed1fe6",
+    "referred_by": null,
+    "created_at": "2025-06-10 12:41:32",
+    "referral_count": 2,
+    "followup_sent": 1
+  },
+  {
+    "id": 188,
+    "email": "jonas.zimmermann@web.de",
+    "referral_code": "fcc81165-7dea-433f-b3eb-2d63cd6ab874",
+    "referred_by": null,
+    "created_at": "2025-06-11 12:41:32",
+    "referral_count": 5,
+    "followup_sent": 1
+  },
+  {
+    "id": 189,
+    "email": "marie.schröder277@gmail.com",
+    "referral_code": "382de5ee-24e6-468e-9f59-b2eb060e1b8f",
+    "referred_by": null,
+    "created_at": "2025-06-11 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 190,
+    "email": "marie.wolf@gmail.com",
+    "referral_code": "501f7ef6-ebae-4f10-aa9e-5d533b1ce2d4",
+    "referred_by": null,
+    "created_at": "2025-06-11 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 191,
+    "email": "noah.hoffmann@yahoo.com",
+    "referral_code": "78034dd3-11b2-4b1f-aa97-49918058c2c9",
+    "referred_by": null,
+    "created_at": "2025-06-11 12:41:32",
+    "referral_count": 3,
+    "followup_sent": 1
+  },
+  {
+    "id": 192,
+    "email": "laura.müller@web.de",
+    "referral_code": "a5afb116-2f02-44a2-8c68-7bd19a859bcd",
+    "referred_by": null,
+    "created_at": "2025-06-11 12:41:32",
+    "referral_count": 2,
+    "followup_sent": 1
+  },
+  {
+    "id": 193,
+    "email": "sarah.wagner302@web.de",
+    "referral_code": "e05eb588-eb3f-4481-9200-acdd83c4dc9f",
+    "referred_by": null,
+    "created_at": "2025-06-11 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 194,
+    "email": "max.wolf@gmx.de",
+    "referral_code": "9286ee23-2900-4ddd-a296-5e35bcc63515",
+    "referred_by": null,
+    "created_at": "2025-06-11 12:41:32",
+    "referral_count": 8,
+    "followup_sent": 1
+  },
+  {
+    "id": 195,
+    "email": "tim.koch@icloud.com",
+    "referral_code": "ab5f1f7f-96b5-45b9-b6f6-8863640f0a76",
+    "referred_by": null,
+    "created_at": "2025-06-11 12:41:32",
+    "referral_count": 3,
+    "followup_sent": 1
+  },
+  {
+    "id": 196,
+    "email": "emily.bauer@gmx.de",
+    "referral_code": "67377b11-7beb-48fb-b6a8-96eb0e1893f9",
+    "referred_by": null,
+    "created_at": "2025-06-11 12:41:32",
+    "referral_count": 3,
+    "followup_sent": 1
+  },
+  {
+    "id": 197,
+    "email": "emily.weber@outlook.com",
+    "referral_code": "f7ff197e-0e7c-4a9d-8e11-b7b66d2a558b",
+    "referred_by": null,
+    "created_at": "2025-06-11 12:41:32",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 198,
+    "email": "lena.schmidt@yahoo.com",
+    "referral_code": "ba621594-59c2-430b-93c2-cb3b08946dec",
+    "referred_by": null,
+    "created_at": "2025-06-12 12:41:32",
+    "referral_count": 4,
+    "followup_sent": 1
+  },
+  {
+    "id": 199,
+    "email": "ben.koch243@icloud.com",
+    "referral_code": "fc8c84bd-15ed-4e24-a7a1-42db6be65ba9",
+    "referred_by": null,
+    "created_at": "2025-06-12 12:41:32",
+    "referral_count": 6,
+    "followup_sent": 1
+  },
+  {
+    "id": 200,
+    "email": "noah.schröder@icloud.com",
+    "referral_code": "9b89a173-9077-4700-8270-84f96bd25c11",
+    "referred_by": null,
+    "created_at": "2025-06-12 12:41:32",
+    "referral_count": 2,
+    "followup_sent": 1
+  },
+  {
+    "id": 201,
+    "email": "elias.schäfer577@web.de",
+    "referral_code": "d1f4a16f-61f4-47f8-956e-c6afb1a6f0a4",
+    "referred_by": null,
+    "created_at": "2025-06-12 12:41:32",
+    "referral_count": 5,
+    "followup_sent": 1
+  },
+  {
+    "id": 202,
+    "email": "marie.koch@icloud.com",
+    "referral_code": "ba9c8bc2-f57f-4906-8bca-5a8a44f7503a",
+    "referred_by": null,
+    "created_at": "2025-06-12 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 203,
+    "email": "paul.klein@gmail.com",
+    "referral_code": "81dc444e-216d-4f61-aea1-142a9684b348",
+    "referred_by": null,
+    "created_at": "2025-06-12 12:41:32",
+    "referral_count": 3,
+    "followup_sent": 1
+  },
+  {
+    "id": 204,
+    "email": "jonas.becker@gmx.de",
+    "referral_code": "72896c6d-8c70-4be1-b05d-ae5083ce3a8f",
+    "referred_by": null,
+    "created_at": "2025-06-12 12:41:32",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 205,
+    "email": "lea.hoffmann@icloud.com",
+    "referral_code": "6338fc38-2536-49d4-a0a6-a8222a7056ad",
+    "referred_by": null,
+    "created_at": "2025-06-12 12:41:32",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 206,
+    "email": "marie.schneider@web.de",
+    "referral_code": "30efffb1-935a-4968-a3db-29e4953ecb9f",
+    "referred_by": null,
+    "created_at": "2025-06-12 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 207,
+    "email": "leon.richter@yahoo.com",
+    "referral_code": "f1c5bb5e-2ca7-4bb2-b4a6-b278a7063fec",
+    "referred_by": null,
+    "created_at": "2025-06-12 12:41:32",
+    "referral_count": 3,
+    "followup_sent": 1
+  },
+  {
+    "id": 208,
+    "email": "marie.schmidt@gmail.com",
+    "referral_code": "19e04532-70dc-4ddc-a0ff-e875f654f51e",
+    "referred_by": null,
+    "created_at": "2025-06-12 12:41:32",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 209,
+    "email": "marie.schneider@gmx.de",
+    "referral_code": "7e374a47-f2a3-41d6-abf8-4178b829eb09",
+    "referred_by": null,
+    "created_at": "2025-06-13 12:41:32",
+    "referral_count": 3,
+    "followup_sent": 1
+  },
+  {
+    "id": 210,
+    "email": "leon.richter@icloud.com",
+    "referral_code": "87356c65-a765-4c1f-9ad0-a402f228646c",
+    "referred_by": null,
+    "created_at": "2025-06-13 12:41:32",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 211,
+    "email": "marie.schäfer75@web.de",
+    "referral_code": "6a186565-c92c-4b14-b8f5-ac48f8688412",
+    "referred_by": null,
+    "created_at": "2025-06-13 12:41:32",
+    "referral_count": 2,
+    "followup_sent": 1
+  },
+  {
+    "id": 212,
+    "email": "marie.neumann@yahoo.com",
+    "referral_code": "2a3dd6be-e5a4-4463-a665-f1547bace029",
+    "referred_by": null,
+    "created_at": "2025-06-13 12:41:32",
+    "referral_count": 7,
+    "followup_sent": 1
+  },
+  {
+    "id": 213,
+    "email": "finn.fischer@yahoo.com",
+    "referral_code": "470213a7-d6f3-4ea4-8a42-513447d68622",
+    "referred_by": null,
+    "created_at": "2025-06-13 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 214,
+    "email": "leon.richter941@outlook.com",
+    "referral_code": "2a4c1afe-d676-4dbc-be31-b8cb6b7da67c",
+    "referred_by": null,
+    "created_at": "2025-06-13 12:41:32",
+    "referral_count": 2,
+    "followup_sent": 1
+  },
+  {
+    "id": 215,
+    "email": "marie.schmidt@web.de",
+    "referral_code": "30bb8e2f-e9a8-4821-b4d8-9bd610977d7b",
+    "referred_by": null,
+    "created_at": "2025-06-13 12:41:32",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 216,
+    "email": "tim.hoffmann@yahoo.com",
+    "referral_code": "7059c5ed-e88b-4b9a-9aee-587b56a56e76",
+    "referred_by": null,
+    "created_at": "2025-06-13 12:41:32",
+    "referral_count": 2,
+    "followup_sent": 1
+  },
+  {
+    "id": 217,
+    "email": "emily.richter@hotmail.de",
+    "referral_code": "5f0cc71c-88af-43a5-8f46-dc86ddbd9104",
+    "referred_by": null,
+    "created_at": "2025-06-13 12:41:32",
+    "referral_count": 2,
+    "followup_sent": 1
+  },
+  {
+    "id": 218,
+    "email": "marie.schmidt326@gmx.de",
+    "referral_code": "9db1a6dd-9b7d-408d-bf80-0c306500d783",
+    "referred_by": null,
+    "created_at": "2025-06-14 12:41:32",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 219,
+    "email": "noah.wagner@gmail.com",
+    "referral_code": "486f16ee-91fb-4c84-8b8d-77a69fc27767",
+    "referred_by": null,
+    "created_at": "2025-06-14 12:41:32",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 220,
+    "email": "lea.hoffmann@gmail.com",
+    "referral_code": "40e1fcbe-d8bc-4cb7-be80-4ca247e3b97a",
+    "referred_by": null,
+    "created_at": "2025-06-14 12:41:32",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 221,
+    "email": "mia.klein@gmx.de",
+    "referral_code": "e039a4b8-1c24-41f2-9159-a188b14b9ac2",
+    "referred_by": null,
+    "created_at": "2025-06-14 12:41:32",
+    "referral_count": 5,
+    "followup_sent": 1
+  },
+  {
+    "id": 222,
+    "email": "sarah.bauer@gmail.com",
+    "referral_code": "5877218c-834f-4ca0-81f4-e6845015e86c",
+    "referred_by": null,
+    "created_at": "2025-06-15 12:41:32",
+    "referral_count": 4,
+    "followup_sent": 1
+  },
+  {
+    "id": 223,
+    "email": "elias.fischer@gmail.com",
+    "referral_code": "1ae512da-7062-4b34-ac50-796d9755660a",
+    "referred_by": null,
+    "created_at": "2025-06-15 12:41:32",
+    "referral_count": 4,
+    "followup_sent": 1
+  },
+  {
+    "id": 224,
+    "email": "lea.schneider@web.de",
+    "referral_code": "beecfcea-bf11-43b9-bd96-fa9a3e1863a1",
+    "referred_by": null,
+    "created_at": "2025-06-15 12:41:32",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 225,
+    "email": "ben.becker862@gmail.com",
+    "referral_code": "2604f8dd-cb26-43d0-91ae-20869a6f34b5",
+    "referred_by": null,
+    "created_at": "2025-06-15 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 226,
+    "email": "elias.klein@yahoo.com",
+    "referral_code": "0865d08a-4134-4665-aa0a-e29ef4acf4fc",
+    "referred_by": null,
+    "created_at": "2025-06-15 12:41:32",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 227,
+    "email": "leon.hoffmann@yahoo.com",
+    "referral_code": "4e826807-4628-44aa-8fc3-810ff1041301",
+    "referred_by": null,
+    "created_at": "2025-06-15 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 228,
+    "email": "sarah.hoffmann@yahoo.com",
+    "referral_code": "09c46338-416a-462f-817a-da439ab8fe7e",
+    "referred_by": null,
+    "created_at": "2025-06-15 12:41:32",
+    "referral_count": 2,
+    "followup_sent": 1
+  },
+  {
+    "id": 229,
+    "email": "marie.braun@gmx.de",
+    "referral_code": "584b61ed-014e-457c-9ad2-f0f03cc78b47",
+    "referred_by": null,
+    "created_at": "2025-06-15 12:41:32",
+    "referral_count": 4,
+    "followup_sent": 1
+  },
+  {
+    "id": 230,
+    "email": "leon.müller@web.de",
+    "referral_code": "3640e13d-5a2c-456d-bb02-e50c2a9b8b63",
+    "referred_by": null,
+    "created_at": "2025-06-15 12:41:32",
+    "referral_count": 4,
+    "followup_sent": 1
+  },
+  {
+    "id": 231,
+    "email": "lea.koch@hotmail.de",
+    "referral_code": "0f37dbf6-c00f-4ec9-a5e0-6765df70ca56",
+    "referred_by": null,
+    "created_at": "2025-06-15 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 232,
+    "email": "lena.schäfer607@icloud.com",
+    "referral_code": "1b54dc03-a2cd-47f3-92f6-44fe78c8f0b8",
+    "referred_by": null,
+    "created_at": "2025-06-15 12:41:32",
+    "referral_count": 7,
+    "followup_sent": 1
+  },
+  {
+    "id": 233,
+    "email": "paul.wolf@yahoo.com",
+    "referral_code": "abda3bfc-72b0-4360-bfd8-cbdeeff06a02",
+    "referred_by": null,
+    "created_at": "2025-06-15 12:41:32",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 234,
+    "email": "anna.schmidt222@web.de",
+    "referral_code": "66e35db8-25ad-418f-97ce-455c0212b313",
+    "referred_by": null,
+    "created_at": "2025-06-15 12:41:32",
+    "referral_count": 3,
+    "followup_sent": 1
+  },
+  {
+    "id": 235,
+    "email": "laura.klein320@hotmail.de",
+    "referral_code": "2c5b67a5-e42d-4ab0-bc4a-4946fd016223",
+    "referred_by": null,
+    "created_at": "2025-06-15 12:41:32",
+    "referral_count": 4,
+    "followup_sent": 1
+  },
+  {
+    "id": 236,
+    "email": "julia.braun@web.de",
+    "referral_code": "0bbb2393-a895-4473-bf2c-ca6775d3fb7b",
+    "referred_by": null,
+    "created_at": "2025-06-15 12:41:32",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 237,
+    "email": "tim.schneider@web.de",
+    "referral_code": "b9083635-4c6f-4cea-a992-b0350cd68d98",
+    "referred_by": null,
+    "created_at": "2025-06-16 12:41:32",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 238,
+    "email": "sarah.schäfer@hotmail.de",
+    "referral_code": "70863525-a209-4d92-a1d4-da4e43729231",
+    "referred_by": null,
+    "created_at": "2025-06-16 12:41:32",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 239,
+    "email": "lena.braun@gmail.com",
+    "referral_code": "45e5bc16-bdf6-499b-b683-ead32dddf6a7",
+    "referred_by": null,
+    "created_at": "2025-06-16 12:41:32",
+    "referral_count": 3,
+    "followup_sent": 1
+  },
+  {
+    "id": 240,
+    "email": "emily.koch341@yahoo.com",
+    "referral_code": "13e36d6b-0f03-417b-992f-1873f8062b96",
+    "referred_by": null,
+    "created_at": "2025-06-16 12:41:32",
+    "referral_count": 4,
+    "followup_sent": 1
+  },
+  {
+    "id": 241,
+    "email": "emma.schmidt2@hotmail.de",
+    "referral_code": "3902d18c-e998-4168-ad4c-0ef32cc648ba",
+    "referred_by": null,
+    "created_at": "2025-06-16 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 242,
+    "email": "julia.weber@outlook.com",
+    "referral_code": "2ea1ab5d-9648-4925-be2f-71bf80e8dec6",
+    "referred_by": null,
+    "created_at": "2025-06-16 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 243,
+    "email": "paul.braun@outlook.com",
+    "referral_code": "7ef51f72-feec-4121-abf9-a3a20d86f6b1",
+    "referred_by": null,
+    "created_at": "2025-06-17 12:41:32",
+    "referral_count": 9,
+    "followup_sent": 1
+  },
+  {
+    "id": 244,
+    "email": "leon.bauer823@outlook.com",
+    "referral_code": "d4d08e0e-c4c2-49d4-aaba-a5cbaad62e91",
+    "referred_by": null,
+    "created_at": "2025-06-17 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 245,
+    "email": "lea.klein965@icloud.com",
+    "referral_code": "afec2c80-255e-4c1f-8d7e-351bbc5aa07b",
+    "referred_by": null,
+    "created_at": "2025-06-17 12:41:32",
+    "referral_count": 5,
+    "followup_sent": 1
+  },
+  {
+    "id": 246,
+    "email": "max.hoffmann@icloud.com",
+    "referral_code": "364ca40a-03b1-4384-8cca-291e0d6f5ac3",
+    "referred_by": null,
+    "created_at": "2025-06-17 12:41:32",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 247,
+    "email": "elias.müller@outlook.com",
+    "referral_code": "0e1276ea-84fe-4230-a735-0ab407f995ec",
+    "referred_by": null,
+    "created_at": "2025-06-17 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 248,
+    "email": "ben.weber@yahoo.com",
+    "referral_code": "8c426939-d22c-405f-b6a4-abbf89857662",
+    "referred_by": null,
+    "created_at": "2025-06-17 12:41:32",
+    "referral_count": 5,
+    "followup_sent": 1
+  },
+  {
+    "id": 249,
+    "email": "lukas.müller@yahoo.com",
+    "referral_code": "16601525-48af-4612-b971-fe902a738949",
+    "referred_by": null,
+    "created_at": "2025-06-18 12:41:32",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 250,
+    "email": "lukas.koch811@gmx.de",
+    "referral_code": "15c717d0-f46d-47b6-a924-35b19669651e",
+    "referred_by": null,
+    "created_at": "2025-06-18 12:41:32",
+    "referral_count": 4,
+    "followup_sent": 1
+  },
+  {
+    "id": 251,
+    "email": "paul.klein@web.de",
+    "referral_code": "e81bab6a-df63-4c0b-b199-f2297ceea76d",
+    "referred_by": null,
+    "created_at": "2025-06-18 12:41:32",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 252,
+    "email": "mia.richter@outlook.com",
+    "referral_code": "03a7a3c3-a3b2-4064-a79c-b8840160b587",
+    "referred_by": null,
+    "created_at": "2025-06-18 12:41:32",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 253,
+    "email": "lea.bauer@gmx.de",
+    "referral_code": "960df984-b9f8-482a-baab-2365b2b38331",
+    "referred_by": null,
+    "created_at": "2025-06-18 12:41:32",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 254,
+    "email": "sarah.wolf91@gmx.de",
+    "referral_code": "aae75c32-90a4-46da-94c4-09c08d789f12",
+    "referred_by": null,
+    "created_at": "2025-06-18 12:41:32",
+    "referral_count": 2,
+    "followup_sent": 1
+  },
+  {
+    "id": 255,
+    "email": "noah.neumann777@icloud.com",
+    "referral_code": "de12aae7-1540-401b-a5e5-d63380340daf",
+    "referred_by": null,
+    "created_at": "2025-06-18 12:41:32",
+    "referral_count": 7,
+    "followup_sent": 1
+  },
+  {
+    "id": 256,
+    "email": "ben.schäfer@gmail.com",
+    "referral_code": "821a8a4a-8667-47c7-b6e9-e0d797ae5904",
+    "referred_by": null,
+    "created_at": "2025-06-18 12:41:32",
+    "referral_count": 4,
+    "followup_sent": 1
+  },
+  {
+    "id": 257,
+    "email": "paul.schwarz@icloud.com",
+    "referral_code": "e046d7df-9b94-49e8-bbb6-f6d6767309c4",
+    "referred_by": null,
+    "created_at": "2025-06-18 12:41:32",
+    "referral_count": 7,
+    "followup_sent": 1
+  },
+  {
+    "id": 258,
+    "email": "emily.wagner@web.de",
+    "referral_code": "98da5038-0fb4-4fd6-b269-35164238b41c",
+    "referred_by": null,
+    "created_at": "2025-06-18 12:41:32",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 259,
+    "email": "finn.schwarz@icloud.com",
+    "referral_code": "b207bd71-8b22-4aa0-a801-34107f37802d",
+    "referred_by": null,
+    "created_at": "2025-06-18 12:41:32",
+    "referral_count": 4,
+    "followup_sent": 1
+  },
+  {
+    "id": 260,
+    "email": "emily.koch48@yahoo.com",
+    "referral_code": "c781e204-917b-467a-914a-425436dc6ef4",
+    "referred_by": null,
+    "created_at": "2025-06-18 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 261,
+    "email": "julia.schneider@hotmail.de",
+    "referral_code": "18723f7d-4e9d-4ad8-8055-786fe331acfc",
+    "referred_by": null,
+    "created_at": "2025-06-18 12:41:32",
+    "referral_count": 7,
+    "followup_sent": 1
+  },
+  {
+    "id": 262,
+    "email": "lea.hoffmann@yahoo.com",
+    "referral_code": "a0340f5e-4c61-44ca-8a76-cadafe15aa68",
+    "referred_by": null,
+    "created_at": "2025-06-18 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 263,
+    "email": "jonas.braun@yahoo.com",
+    "referral_code": "51d1c8ba-8325-413f-9d2a-8d9ac5e8e9a9",
+    "referred_by": null,
+    "created_at": "2025-06-18 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 264,
+    "email": "elias.braun@outlook.com",
+    "referral_code": "b2ecc9b9-eaef-4ff9-9bfe-741acbebc53a",
+    "referred_by": null,
+    "created_at": "2025-06-18 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 265,
+    "email": "max.richter@gmail.com",
+    "referral_code": "f82277ad-4c01-40c8-8ff5-e97220d462bb",
+    "referred_by": null,
+    "created_at": "2025-06-18 12:41:32",
+    "referral_count": 8,
+    "followup_sent": 1
+  },
+  {
+    "id": 266,
+    "email": "noah.bauer@gmail.com",
+    "referral_code": "106c7ac8-12b3-4526-bb68-182bf309bdd1",
+    "referred_by": null,
+    "created_at": "2025-06-18 12:41:32",
+    "referral_count": 2,
+    "followup_sent": 1
+  },
+  {
+    "id": 267,
+    "email": "jonas.wolf@web.de",
+    "referral_code": "6d92585f-e41b-489f-9202-cf8e0962d65a",
+    "referred_by": null,
+    "created_at": "2025-06-18 12:41:32",
+    "referral_count": 8,
+    "followup_sent": 1
+  },
+  {
+    "id": 268,
+    "email": "emma.becker@icloud.com",
+    "referral_code": "d3b7f7c5-3540-4c28-bd54-9bb985d041db",
+    "referred_by": null,
+    "created_at": "2025-06-18 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 269,
+    "email": "jonas.richter@web.de",
+    "referral_code": "f81ac8a1-56f4-47a5-ae08-9bf0ba4174e1",
+    "referred_by": null,
+    "created_at": "2025-06-19 12:41:32",
+    "referral_count": 8,
+    "followup_sent": 1
+  },
+  {
+    "id": 270,
+    "email": "leon.schäfer@gmail.com",
+    "referral_code": "ce05a7a6-bbf7-4c73-ab94-43c0c900343c",
+    "referred_by": null,
+    "created_at": "2025-06-19 12:41:32",
+    "referral_count": 4,
+    "followup_sent": 1
+  },
+  {
+    "id": 271,
+    "email": "lena.schäfer@gmx.de",
+    "referral_code": "42113acd-793d-4cc5-ad56-2c3327c7b703",
+    "referred_by": null,
+    "created_at": "2025-06-19 12:41:32",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 272,
+    "email": "lena.schröder778@icloud.com",
+    "referral_code": "88be0227-ff88-47f4-b611-a7c5ddda80ae",
+    "referred_by": null,
+    "created_at": "2025-06-19 12:41:32",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 273,
+    "email": "sarah.meyer@gmx.de",
+    "referral_code": "0f7b03e0-13a5-46a7-9d03-cc101ca4f120",
+    "referred_by": null,
+    "created_at": "2025-06-19 12:41:32",
+    "referral_count": 4,
+    "followup_sent": 1
+  },
+  {
+    "id": 274,
+    "email": "paul.hoffmann@icloud.com",
+    "referral_code": "d532159f-db59-425a-b812-71ccdf69bcff",
+    "referred_by": null,
+    "created_at": "2025-06-19 12:41:32",
+    "referral_count": 4,
+    "followup_sent": 1
+  },
+  {
+    "id": 275,
+    "email": "emily.neumann@icloud.com",
+    "referral_code": "bf74f873-a0b2-41bb-acf0-76e3306ecf55",
+    "referred_by": null,
+    "created_at": "2025-06-19 12:41:32",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 276,
+    "email": "mia.wolf@gmx.de",
+    "referral_code": "dc1e270c-8b0b-4071-b59a-e1bf153802c2",
+    "referred_by": null,
+    "created_at": "2025-06-19 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 277,
+    "email": "noah.schäfer@gmx.de",
+    "referral_code": "730f55bd-5c2e-4ca2-b341-10dc4489cf0b",
+    "referred_by": null,
+    "created_at": "2025-06-19 12:41:32",
+    "referral_count": 2,
+    "followup_sent": 1
+  },
+  {
+    "id": 278,
+    "email": "emma.bauer@outlook.com",
+    "referral_code": "012f841f-11b2-4710-ac10-1ba07401d153",
+    "referred_by": null,
+    "created_at": "2025-06-19 12:41:32",
+    "referral_count": 5,
+    "followup_sent": 1
+  },
+  {
+    "id": 279,
+    "email": "emma.zimmermann@web.de",
+    "referral_code": "8ac849fd-2f90-4b63-9927-fc3d1cbea859",
+    "referred_by": null,
+    "created_at": "2025-06-19 12:41:32",
+    "referral_count": 2,
+    "followup_sent": 1
+  },
+  {
+    "id": 280,
+    "email": "max.schmidt@web.de",
+    "referral_code": "6b05df95-2854-4354-a8af-2eddcbdcc8e4",
+    "referred_by": null,
+    "created_at": "2025-06-20 12:41:32",
+    "referral_count": 2,
+    "followup_sent": 1
+  },
+  {
+    "id": 281,
+    "email": "julia.schmidt@outlook.com",
+    "referral_code": "3602950f-604e-4a5d-a84a-3c69d68f0900",
+    "referred_by": null,
+    "created_at": "2025-06-20 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 282,
+    "email": "lukas.weber@yahoo.com",
+    "referral_code": "a9ecc46c-3bbd-44ce-bc48-bda295105c2c",
+    "referred_by": null,
+    "created_at": "2025-06-20 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 283,
+    "email": "max.schröder@hotmail.de",
+    "referral_code": "addff065-ef39-4686-bfc7-1b17e5dfea2a",
+    "referred_by": null,
+    "created_at": "2025-06-20 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 284,
+    "email": "lukas.koch@web.de",
+    "referral_code": "103dd078-6ee6-4010-8a26-733c71318f93",
+    "referred_by": null,
+    "created_at": "2025-06-20 12:41:32",
+    "referral_count": 4,
+    "followup_sent": 1
+  },
+  {
+    "id": 285,
+    "email": "elias.richter@gmail.com",
+    "referral_code": "15c4e77a-82b2-4fb1-9177-9e6260a96e0a",
+    "referred_by": null,
+    "created_at": "2025-06-20 12:41:32",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 286,
+    "email": "lena.schäfer@hotmail.de",
+    "referral_code": "0c80b922-8013-4caa-90e8-4abed7b0dc0c",
+    "referred_by": null,
+    "created_at": "2025-06-20 12:41:32",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 287,
+    "email": "mia.wagner916@hotmail.de",
+    "referral_code": "0f758f80-e44b-4ef2-bec1-52aafc2c78ac",
+    "referred_by": null,
+    "created_at": "2025-06-20 12:41:32",
+    "referral_count": 3,
+    "followup_sent": 1
+  },
+  {
+    "id": 288,
+    "email": "leon.wolf@icloud.com",
+    "referral_code": "bf6c329f-7ac8-4e21-a64f-ab4f9c47d8b1",
+    "referred_by": null,
+    "created_at": "2025-06-20 12:41:32",
+    "referral_count": 7,
+    "followup_sent": 1
+  },
+  {
+    "id": 290,
+    "email": "test@example.com",
+    "referral_code": "3e78fd26-be3b-4601-aad0-3cc29f252f62",
+    "referred_by": null,
+    "created_at": "2025-06-21 12:29:19",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 291,
+    "email": "elias.zimmermann@gmx.de",
+    "referral_code": "e559b837-4772-46d7-a4e8-f19ca4bd098c",
+    "referred_by": null,
+    "created_at": "2025-06-21 12:41:32",
+    "referral_count": 3,
+    "followup_sent": 1
+  },
+  {
+    "id": 292,
+    "email": "emma.klein@icloud.com",
+    "referral_code": "d6183e0f-a74c-40ef-877e-59b49c015b8e",
+    "referred_by": null,
+    "created_at": "2025-06-21 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 293,
+    "email": "marie.wolf@icloud.com",
+    "referral_code": "f5482e91-fe07-463c-a632-d9caa0b1890a",
+    "referred_by": null,
+    "created_at": "2025-06-21 12:41:32",
+    "referral_count": 2,
+    "followup_sent": 1
+  },
+  {
+    "id": 294,
+    "email": "tim.schäfer@gmail.com",
+    "referral_code": "1a2cf2ff-7301-4598-8fa0-069194442b63",
+    "referred_by": null,
+    "created_at": "2025-06-21 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 295,
+    "email": "lukas.koch@outlook.com",
+    "referral_code": "5e99695d-48de-4dd1-903b-ac344f7338e6",
+    "referred_by": null,
+    "created_at": "2025-06-21 12:41:32",
+    "referral_count": 2,
+    "followup_sent": 1
+  },
+  {
+    "id": 296,
+    "email": "mia.schröder@hotmail.de",
+    "referral_code": "4d1d809e-ccb8-4c12-bc90-539f7cca67d2",
+    "referred_by": null,
+    "created_at": "2025-06-21 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 297,
+    "email": "lea.fischer@gmail.com",
+    "referral_code": "9e1a1294-47f1-4018-98ff-c12e7847b14a",
+    "referred_by": null,
+    "created_at": "2025-06-21 12:41:32",
+    "referral_count": 5,
+    "followup_sent": 1
+  },
+  {
+    "id": 298,
+    "email": "julia.neumann@outlook.com",
+    "referral_code": "3d795ca3-ae85-42e5-a967-f18690632167",
+    "referred_by": null,
+    "created_at": "2025-06-21 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 299,
+    "email": "paul.wolf656@web.de",
+    "referral_code": "c9efa5f7-9da0-4ce7-8906-61eb0afc3d43",
+    "referred_by": null,
+    "created_at": "2025-06-21 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 300,
+    "email": "neuer@test.de",
+    "referral_code": "6c19c57a-c1d7-4fff-8044-6dc696411191",
+    "referred_by": null,
+    "created_at": "2025-06-21 12:41:50",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 301,
+    "email": "eefew.leo@gmail.com",
+    "referral_code": "9ae670be-b471-43b0-9e66-51a1a2a3409e",
+    "referred_by": null,
+    "created_at": "2025-06-21 13:17:22",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 302,
+    "email": "neue@example.com",
+    "referral_code": "3046741b-2917-46bb-bf0f-1860bbfad519",
+    "referred_by": null,
+    "created_at": "2025-06-21 18:25:27",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 303,
+    "email": "test2@example.com",
+    "referral_code": "1170eb43-3300-4b35-9b6a-b5ceac477722",
+    "referred_by": null,
+    "created_at": "2025-06-21 18:27:25",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 304,
+    "email": "jefececewv@gmx.de",
+    "referral_code": "fce4fbb4-6fcd-41d2-acb8-912ff8e7130c",
+    "referred_by": null,
+    "created_at": "2025-06-21 18:50:00",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 305,
+    "email": "hefiheifheife@gmx.de",
+    "referral_code": "d97df7dd-0086-45ca-a81b-1804f118b28d",
+    "referred_by": null,
+    "created_at": "2025-06-22 15:07:11",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 306,
+    "email": "jirjirgr@icloud.com",
+    "referral_code": "61268f0a-6a2b-4092-8fd3-a668141d8834",
+    "referred_by": null,
+    "created_at": "2025-06-25 17:53:53",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 307,
+    "email": "huuiwioef@icloud.com",
+    "referral_code": "81f4740a-1b9a-476f-ab9b-e64837958e98",
+    "referred_by": null,
+    "created_at": "2025-06-26 15:34:05",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 308,
+    "email": "oekfnweif@icloud.com",
+    "referral_code": "43476e80-ee2b-4e5f-b308-96ae45997ecb",
+    "referred_by": null,
+    "created_at": "2025-06-26 15:42:46",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 309,
+    "email": "efwefewfew@web.de",
+    "referral_code": "09bad597-d200-4e9f-b09a-5dd7a6df8b44",
+    "referred_by": null,
+    "created_at": "2025-06-26 15:58:58",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 310,
+    "email": "idsivisvhv@gmx.de",
+    "referral_code": "8e603774-15ac-41a4-a534-871455b21a19",
+    "referred_by": null,
+    "created_at": "2025-06-26 16:55:30",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 311,
+    "email": "odowejfiewf@gmx.de",
+    "referral_code": "296a3290-fbf3-4770-93ca-8a24039b097b",
+    "referred_by": null,
+    "created_at": "2025-06-29 20:23:35",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 312,
+    "email": "ewfwfwef@icloud.com",
+    "referral_code": "4fe781c0-07e4-4e3c-9f21-1cc7fe8620b4",
+    "referred_by": null,
+    "created_at": "2025-06-29 20:34:49",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 313,
+    "email": "hhejfhge@gmx.de",
+    "referral_code": "d51903e0-0618-4bd0-ab53-e15c1ed1080e",
+    "referred_by": null,
+    "created_at": "2025-07-01 09:56:03",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 314,
+    "email": "njerguwehgru@gmx.de",
+    "referral_code": "235abd57-977b-4c76-856a-783142b0f7f7",
+    "referred_by": null,
+    "created_at": "2025-07-01 09:59:09",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 315,
+    "email": "joeogjv@icloud.com",
+    "referral_code": "6ed9f5ba-8cbe-4938-85d0-707182f148ae",
+    "referred_by": null,
+    "created_at": "2025-07-01 17:01:01",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 316,
+    "email": "efefewf@gmx.de",
+    "referral_code": "9e216a6c-41f8-4ed3-b421-0d5c776b371f",
+    "referred_by": null,
+    "created_at": "2025-07-06 16:45:11",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 317,
+    "email": "weissmueller.leo@gmail.com",
+    "referral_code": "b9b496ee-3c79-4e7d-bc83-ae775416259e",
+    "referred_by": null,
+    "created_at": "2025-07-13 16:35:07",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 318,
+    "email": "leo.weissmueller@gmx.de",
+    "referral_code": "ebb88252-85e7-411e-9b3c-ea5817d43c29",
+    "referred_by": null,
+    "created_at": "2025-07-13 17:03:01",
+    "referral_count": 1,
+    "followup_sent": 1
+  },
+  {
+    "id": 319,
+    "email": "leo.weismueller@gmail.com",
+    "referral_code": "107d25c2-b35b-4cf1-a0e4-2f0bdd6e6fbc",
+    "referred_by": null,
+    "created_at": "2025-07-13 17:05:02",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 320,
+    "email": "leon.meyer@web.de",
+    "referral_code": "e30da458-f83f-47b5-9942-c34ca8505c0b",
+    "referred_by": null,
+    "created_at": "2025-05-23 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 321,
+    "email": "lukas.hoffmann477@hotmail.de",
+    "referral_code": "3cfe7f58-4049-491b-b524-f2ba21379c54",
+    "referred_by": null,
+    "created_at": "2025-05-23 12:41:32",
+    "referral_count": 2,
+    "followup_sent": 1
+  },
+  {
+    "id": 322,
+    "email": "ben.wolf@hotmail.de",
+    "referral_code": "ca4495f3-0abd-4407-964b-a4738f6e4e97",
+    "referred_by": null,
+    "created_at": "2025-05-23 12:41:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 644,
+    "email": "eewffw@gmx.de",
+    "referral_code": "d2b6f685-4cc5-47ea-b3f4-47294f2a0ced",
+    "referred_by": null,
+    "created_at": "2025-07-13 20:04:32",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 646,
+    "email": "wefwefwfv@gmx.de",
+    "referral_code": "a2ad6def-fccd-43b0-ba83-b9c7e5d451cb",
+    "referred_by": null,
+    "created_at": "2025-07-13 20:05:53",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 649,
+    "email": "neue@test.com",
+    "referral_code": "26187f24-0012-4b9e-8b00-ac74ee6f0840",
+    "referred_by": null,
+    "created_at": "2025-07-16 19:28:29",
+    "referral_count": 0,
+    "followup_sent": 1
+  },
+  {
+    "id": 651,
+    "email": "erer@gmx.de",
+    "referral_code": "048d2ef2-36c4-43a5-aeed-7809fdef8daf",
+    "referred_by": null,
+    "created_at": "2025-07-22 20:57:20",
+    "referral_count": 0,
+    "followup_sent": 0
+  }
+]
