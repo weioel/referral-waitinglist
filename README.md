@@ -183,3 +183,4 @@ Bei Fragen oder Problemen:
 ---
 
 **Viel Erfolg mit deinem Referral-Wartelisten-System! 🚀** # Updated Wed Jul 23 15:06:09 CEST 2025
+# Force Vercel redeploy Wed Jul 23 17:19:41 CEST 2025
