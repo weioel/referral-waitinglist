@@ -30,29 +30,32 @@ const apiInstance = new SibApiV3Sdk.TransactionalEmailsApi();
 // Health Check Endpoint
 app.get('/api/health', async (req, res) => {
   try {
-    const { data, error } = await supabase
+    const { count, error } = await supabase
       .from('waitinglist')
-      .select('count(*)', { count: 'exact', head: true });
+      .select('*', { count: 'exact', head: true });
     
-    if (error) throw error;
+    if (error) {
+      console.error('Health check error:', error);
+      throw error;
+    }
     
-  res.json({ 
+    res.json({ 
       status: 'healthy', 
       timestamp: new Date().toISOString(),
       port: PORT,
       env: process.env.NODE_ENV || 'development',
       database: 'Supabase',
-      users: data || 0
+      users: count || 0
     });
   } catch (error) {
     res.status(500).json({ 
       status: 'unhealthy', 
-      error: error.message,
-    timestamp: new Date().toISOString(),
-    port: PORT,
+      error: error.message || 'Database connection failed',
+      timestamp: new Date().toISOString(),
+      port: PORT,
       env: process.env.NODE_ENV || 'development',
       database: 'Supabase'
-  });
+    });
   }
 });
 
@@ -62,18 +65,22 @@ async function initializeDatabase() {
     console.log('🔄 Prüfe Supabase Datenbank...');
     
     // Prüfe ob Tabelle existiert und hole Anzahl der Benutzer
-    const { data, error } = await supabase
+    const { count, error } = await supabase
       .from('waitinglist')
-      .select('count(*)', { count: 'exact', head: true });
+      .select('*', { count: 'exact', head: true });
     
     if (error) {
       console.error('❌ Fehler beim Prüfen der Tabelle:', error);
-      throw error;
+      console.error('❌ Error details:', JSON.stringify(error, null, 2));
+      // Nicht werfen, damit Server trotzdem startet
+      console.log('⚠️ Server startet trotzdem...');
+      return;
     }
     
-    console.log(`✅ Supabase verbunden - ${data || 0} Benutzer in der Warteliste`);
+    console.log(`✅ Supabase verbunden - ${count || 0} Benutzer in der Warteliste`);
   } catch (error) {
     console.error('❌ Fehler bei der Datenbankinitialisierung:', error);
+    console.log('⚠️ Server startet trotzdem...');
   }
 }
 
