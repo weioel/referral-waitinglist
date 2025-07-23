@@ -36,9 +36,9 @@ app.get('/health', (req, res) => {
 // Datenbank initialisieren
 const db = new sqlite3.Database('./database.sqlite', (err) => {
   if (err) {
-    console.error('❌ Fehler beim Verbinden zur Datenbank:', err.message);
+    console.error('Fehler beim Verbinden zur Datenbank:', err.message);
   } else {
-    console.log('✅ Erfolgreich mit SQLite Datenbank verbunden.');
+    console.log('Erfolgreich mit SQLite Datenbank verbunden.');
     initializeDatabase();
   }
 });
@@ -65,7 +65,7 @@ function initializeDatabase() {
         if (err) {
           console.error('Fehler beim Prüfen der Tabelle:', err.message);
         } else if (row.count > 0) {
-          console.log(`✅ Warteliste-Tabelle bereits vorhanden mit ${row.count} Benutzern`);
+          console.log(`Warteliste-Tabelle bereits vorhanden mit ${row.count} Benutzern`);
         } else {
           console.log('waitinglist Tabelle erfolgreich erstellt oder bereits vorhanden.');
         }
@@ -254,10 +254,7 @@ async function sendWelcomeEmailWithPosition(email, referralCode, position, nextJ
     sendSmtpEmail.to = [{ email: email }];
     
     // Prüfe ob API-Key vorhanden ist
-    if (!process.env.BREVO_API_KEY) {
-      console.log('⚠️ Kein API-Key gesetzt - E-Mail wird nicht gesendet an:', email);
-      return false;
-    }
+
     
     const result = await apiInstance.sendTransacEmail(sendSmtpEmail);
     console.log('Willkommens-E-Mail mit Position gesendet an:', email, 'Position:', position);
@@ -785,11 +782,75 @@ app.listen(PORT, () => {
   console.log(`🚀 Server läuft auf http://localhost:${PORT}`);
   console.log(`🔗 Referral-Links Format: http://localhost:${PORT}/?ref=[referral-code]`);
   
-  // Follow-up Timer deaktiviert für Stabilität
-  // startFollowUpTimer();
+  // Starte Follow-up Timer
+  startFollowUpTimer();
 });
 
-// Follow-up Timer Funktionen entfernt für Stabilität
+/**
+ * Timer für Follow-up E-Mails (alle 6 Stunden)
+ */
+function startFollowUpTimer() {
+  console.log('⏰ Follow-up Timer gestartet - prüfe alle 6 Stunden auf 24h Follow-ups');
+  
+  // Sofort beim Start prüfen
+  checkAndSendFollowUps();
+  
+  // Dann alle 6 Stunden (6 * 60 * 60 * 1000 ms)
+  setInterval(checkAndSendFollowUps, 6 * 60 * 60 * 1000);
+}
+
+/**
+ * Prüft und sendet Follow-up E-Mails für Benutzer, die vor 24h registriert wurden
+ */
+async function checkAndSendFollowUps() {
+  console.log('🔍 Prüfe auf Follow-up E-Mails...');
+  
+  const query = `
+    SELECT email, referral_code, created_at 
+    FROM waitinglist 
+    WHERE followup_sent = 0 
+    AND datetime(created_at, '+24 hours') <= datetime('now')
+  `;
+  
+  db.all(query, [], async (err, rows) => {
+    if (err) {
+      console.error('Fehler beim Prüfen der Follow-up E-Mails:', err);
+      return;
+    }
+    
+    if (rows.length === 0) {
+      console.log('✅ Keine Follow-up E-Mails zu versenden');
+      return;
+    }
+    
+    console.log(`📧 Sende ${rows.length} Follow-up E-Mail(s)...`);
+    
+    for (const row of rows) {
+      try {
+        // Position berechnen
+        calculatePosition(row, async (position) => {
+          // Follow-up E-Mail senden
+          const success = await sendFollowUpEmail(row.email, row.referral_code, position);
+          
+          if (success) {
+            // Als versendet markieren
+            db.run('UPDATE waitinglist SET followup_sent = 1 WHERE email = ?', [row.email], (err) => {
+              if (err) {
+                console.error('Fehler beim Markieren der Follow-up E-Mail als versendet:', err);
+              }
+            });
+          }
+        });
+        
+        // Kurze Pause zwischen E-Mails
+        await new Promise(resolve => setTimeout(resolve, 1000));
+        
+      } catch (error) {
+        console.error('Fehler beim Senden der Follow-up E-Mail an:', row.email, error);
+      }
+    }
+  });
+}
 
 // Graceful Shutdown
 process.on('SIGINT', () => {
