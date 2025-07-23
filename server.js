@@ -23,7 +23,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Brevo API Konfiguration
 const defaultClient = SibApiV3Sdk.ApiClient.instance;
 const apiKey = defaultClient.authentications['api-key'];
-apiKey.apiKey = process.env.BREVO_API_KEY || 'xkeysib-2ba7b6c5c8b1e2e8f5a9b4c3d6e7f8a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7-Vz9wX8yA7bC6dE5fG4hI3jK2lM1nO0pQ9rS8tU7vW6xY5zA4bC3dE2fG1hI0jK9';
+apiKey.apiKey = process.env.BREVO_API_KEY || 'DEVELOPMENT_MODE_NO_EMAILS';
 
 const apiInstance = new SibApiV3Sdk.TransactionalEmailsApi();
 
@@ -39,7 +39,7 @@ app.get('/api/health', async (req, res) => {
       throw error;
     }
     
-    res.json({ 
+  res.json({ 
       status: 'healthy', 
       timestamp: new Date().toISOString(),
       port: PORT,
@@ -51,11 +51,11 @@ app.get('/api/health', async (req, res) => {
     res.status(500).json({ 
       status: 'unhealthy', 
       error: error.message || 'Database connection failed',
-      timestamp: new Date().toISOString(),
-      port: PORT,
+    timestamp: new Date().toISOString(),
+    port: PORT,
       env: process.env.NODE_ENV || 'development',
       database: 'Supabase'
-    });
+  });
   }
 });
 
@@ -88,6 +88,12 @@ async function initializeDatabase() {
  * E-Mail-Funktionen
  */
 async function sendWelcomeEmail(email, referralCode) {
+  // Development Mode: Keine E-Mails senden
+  if (!process.env.BREVO_API_KEY || process.env.BREVO_API_KEY === 'DEVELOPMENT_MODE_NO_EMAILS') {
+    console.log(`📧 [DEV] E-Mail würde gesendet an: ${email} (Referral: ${referralCode})`);
+    return true;
+  }
+  
   const referralLink = `${BASE_URL}/?ref=${referralCode}`;
   
     const sendSmtpEmail = new SibApiV3Sdk.SendSmtpEmail();
@@ -104,7 +110,7 @@ async function sendWelcomeEmail(email, referralCode) {
       <p>Bis bald!<br>Das CultShare Team</p>
       </div>
     `;
-  sendSmtpEmail.sender = { "name": "CultShare", "email": process.env.BREVO_SENDER_EMAIL || "noreply@cultshare.app" };
+  sendSmtpEmail.sender = { "name": "CultShare", "email": process.env.BREVO_SENDER_EMAIL || "team@cultshare.app" };
   sendSmtpEmail.to = [{ "email": email }];
 
   try {
@@ -122,6 +128,12 @@ async function sendWelcomeEmail(email, referralCode) {
 }
 
 async function sendWelcomeEmailWithPosition(email, referralCode, position, potentialJump) {
+  // Development Mode: Keine E-Mails senden
+  if (!process.env.BREVO_API_KEY || process.env.BREVO_API_KEY === 'DEVELOPMENT_MODE_NO_EMAILS') {
+    console.log(`📧 [DEV] Willkommens-E-Mail würde gesendet an: ${email} (Position: ${position + 1}, Sprung: ${potentialJump})`);
+    return true;
+  }
+  
   const referralLink = `${BASE_URL}/?ref=${referralCode}`;
   
     const sendSmtpEmail = new SibApiV3Sdk.SendSmtpEmail();
@@ -287,7 +299,7 @@ app.post('/api/signup', async (req, res) => {
     // Willkommens-E-Mail mit korrekter Position senden
     console.log('🚀 Versende Willkommens-E-Mail an:', email, 'Position:', position + 1, 'Nächster Sprung:', potentialJump);
     await sendWelcomeEmailWithPosition(email, userReferralCode, position, potentialJump);
-    
+      
       // Wenn ein Referral-Code verwendet wurde, den Referral-Zähler erhöhen
       if (referralCode) {
       const { data: referrer, error: referrerError } = await supabase
@@ -344,7 +356,7 @@ app.post('/api/signup', async (req, res) => {
           email: email,
           referralCode: userReferralCode,
         }
-    });
+      });
     
   } catch (error) {
     console.error('Fehler bei der Anmeldung:', error);
@@ -556,7 +568,7 @@ app.delete('/api/user/:referralCode', async (req, res) => {
       return res.status(404).json({ error: 'Benutzer nicht gefunden' });
     }
     return res.status(500).json({ error: 'Fehler beim Löschen des Benutzers' });
-  }
+    }
     console.log('Benutzer gelöscht mit referralCode:', referralCode);
     res.json({ success: true, message: 'Benutzer erfolgreich gelöscht' });
 });
