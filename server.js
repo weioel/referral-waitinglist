@@ -7,7 +7,7 @@ const SibApiV3Sdk = require('sib-api-v3-sdk');
 
 const app = express();
 const PORT = process.env.PORT || 3003;
-const BASE_URL = process.env.BASE_URL || (process.env.RAILWAY_STATIC_URL || `http://localhost:${PORT}`);
+const BASE_URL = process.env.BASE_URL || 'https://waitinglist.cultshare.app';
 
 // Supabase Client initialisieren
 const supabaseUrl = process.env.SUPABASE_URL || 'https://oqwqgvupmmgtgmkkovyq.supabase.co';
