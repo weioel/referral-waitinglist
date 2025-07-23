@@ -159,7 +159,7 @@ async function sendWelcomeEmail(email, referralCode) {
           
           <!-- CTA Button -->
           <div style="text-align: center; margin-bottom: 30px;">
-            <a href="${referralLink}" style="display: inline-block; background: #FF90BF; color: #ffffff; text-decoration: none; padding: 16px 32px; border-radius: 8px; font-weight: 600; font-size: 16px; box-shadow: 0 4px 6px rgba(255, 144, 191, 0.25);">
+            <a href="https://wa.me/4915205602818?text=Hi%2C%20ich%20m%C3%B6chte%20gern%20%C3%BCber%20Ticket-Launches%20informiert%20werden." style="display: inline-block; background: #FF90BF; color: #ffffff; text-decoration: none; padding: 16px 32px; border-radius: 8px; font-weight: 600; font-size: 16px; box-shadow: 0 4px 6px rgba(255, 144, 191, 0.25);">
               🚀 Jetzt Link teilen
             </a>
           </div>
@@ -295,8 +295,8 @@ async function sendWelcomeEmailWithPosition(email, referralCode, position, poten
           
           <!-- CTA Button -->
           <div style="text-align: center; margin-bottom: 30px;">
-            <a href="${referralLink}" style="display: inline-block; background: #FF90BF; color: #ffffff; text-decoration: none; padding: 16px 32px; border-radius: 8px; font-weight: 600; font-size: 16px; box-shadow: 0 4px 6px rgba(255, 144, 191, 0.25);">
-              🚀 Weiter teilen
+            <a href="https://wa.me/4915205602818?text=Hi%2C%20ich%20m%C3%B6chte%20gern%20%C3%BCber%20Ticket-Launches%20informiert%20werden." style="display: inline-block; background: #FF90BF; color: #ffffff; text-decoration: none; padding: 16px 32px; border-radius: 8px; font-weight: 600; font-size: 16px; box-shadow: 0 4px 6px rgba(255, 144, 191, 0.25);">
+              🎫 Informationen zum Ticket-Launch
             </a>
           </div>
           
@@ -421,8 +421,8 @@ async function sendPositionUpdateEmail(email, referralCode, position, jump) {
           
           <!-- CTA Button -->
           <div style="text-align: center; margin-bottom: 30px;">
-            <a href="${referralLink}" style="display: inline-block; background: #FF90BF; color: #ffffff; text-decoration: none; padding: 16px 32px; border-radius: 8px; font-weight: 600; font-size: 16px; box-shadow: 0 4px 6px rgba(255, 144, 191, 0.25);">
-              🚀 Weiter teilen
+            <a href="https://wa.me/4915205602818?text=Hi%2C%20ich%20m%C3%B6chte%20gern%20%C3%BCber%20Ticket-Launches%20informiert%20werden." style="display: inline-block; background: #FF90BF; color: #ffffff; text-decoration: none; padding: 16px 32px; border-radius: 8px; font-weight: 600; font-size: 16px; box-shadow: 0 4px 6px rgba(255, 144, 191, 0.25);">
+              🎫 Informationen zum Ticket-Launch
             </a>
           </div>
           

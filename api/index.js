@@ -96,9 +96,9 @@ async function sendWelcomeEmail(email, referralCode) {
   
   const referralLink = `${BASE_URL}/?ref=${referralCode}`;
   
-  const sendSmtpEmail = new SibApiV3Sdk.SendSmtpEmail();
+    const sendSmtpEmail = new SibApiV3Sdk.SendSmtpEmail();
   sendSmtpEmail.subject = "Willkommen zur Warteliste! 🎉";
-  sendSmtpEmail.htmlContent = `
+    sendSmtpEmail.htmlContent = `
     <!DOCTYPE html>
     <html>
     <head>
@@ -159,8 +159,8 @@ async function sendWelcomeEmail(email, referralCode) {
           
           <!-- CTA Button -->
           <div style="text-align: center; margin-bottom: 30px;">
-            <a href="${referralLink}" style="display: inline-block; background: #FF90BF; color: #ffffff; text-decoration: none; padding: 16px 32px; border-radius: 8px; font-weight: 600; font-size: 16px; box-shadow: 0 4px 6px rgba(255, 144, 191, 0.25);">
-              🚀 Jetzt Link teilen
+            <a href="https://wa.me/4915205602818?text=Hi%2C%20ich%20m%C3%B6chte%20gern%20%C3%BCber%20Ticket-Launches%20informiert%20werden." style="display: inline-block; background: #FF90BF; color: #ffffff; text-decoration: none; padding: 16px 32px; border-radius: 8px; font-weight: 600; font-size: 16px; box-shadow: 0 4px 6px rgba(255, 144, 191, 0.25);">
+              🎫 Informationen zum Ticket-Launch
             </a>
           </div>
           
@@ -179,7 +179,7 @@ async function sendWelcomeEmail(email, referralCode) {
       </div>
     </body>
     </html>
-  `;
+    `;
   sendSmtpEmail.sender = { "name": "CultShare", "email": process.env.BREVO_SENDER_EMAIL || "team@cultshare.app" };
   sendSmtpEmail.to = [{ "email": email }];
 
@@ -206,9 +206,9 @@ async function sendWelcomeEmailWithPosition(email, referralCode, position, poten
   
   const referralLink = `${BASE_URL}/?ref=${referralCode}`;
   
-  const sendSmtpEmail = new SibApiV3Sdk.SendSmtpEmail();
+    const sendSmtpEmail = new SibApiV3Sdk.SendSmtpEmail();
   sendSmtpEmail.subject = "Willkommen zur Warteliste! 🎉";
-  sendSmtpEmail.htmlContent = `
+    sendSmtpEmail.htmlContent = `
     <!DOCTYPE html>
     <html>
     <head>
@@ -295,8 +295,8 @@ async function sendWelcomeEmailWithPosition(email, referralCode, position, poten
           
           <!-- CTA Button -->
           <div style="text-align: center; margin-bottom: 30px;">
-            <a href="${referralLink}" style="display: inline-block; background: #FF90BF; color: #ffffff; text-decoration: none; padding: 16px 32px; border-radius: 8px; font-weight: 600; font-size: 16px; box-shadow: 0 4px 6px rgba(255, 144, 191, 0.25);">
-              🚀 Weiter teilen
+            <a href="https://wa.me/4915205602818?text=Hi%2C%20ich%20m%C3%B6chte%20gern%20%C3%BCber%20Ticket-Launches%20informiert%20werden." style="display: inline-block; background: #FF90BF; color: #ffffff; text-decoration: none; padding: 16px 32px; border-radius: 8px; font-weight: 600; font-size: 16px; box-shadow: 0 4px 6px rgba(255, 144, 191, 0.25);">
+              🎫 Informationen zum Ticket-Launch
             </a>
           </div>
           
@@ -332,9 +332,9 @@ async function sendWelcomeEmailWithPosition(email, referralCode, position, poten
 async function sendPositionUpdateEmail(email, referralCode, position, jump) {
   const referralLink = `${BASE_URL}/?ref=${referralCode}`;
   
-  const sendSmtpEmail = new SibApiV3Sdk.SendSmtpEmail();
+    const sendSmtpEmail = new SibApiV3Sdk.SendSmtpEmail();
   sendSmtpEmail.subject = "Du bist in der Warteliste aufgestiegen! ⬆️";
-  sendSmtpEmail.htmlContent = `
+    sendSmtpEmail.htmlContent = `
     <!DOCTYPE html>
     <html>
     <head>
@@ -421,8 +421,8 @@ async function sendPositionUpdateEmail(email, referralCode, position, jump) {
           
           <!-- CTA Button -->
           <div style="text-align: center; margin-bottom: 30px;">
-            <a href="${referralLink}" style="display: inline-block; background: #FF90BF; color: #ffffff; text-decoration: none; padding: 16px 32px; border-radius: 8px; font-weight: 600; font-size: 16px; box-shadow: 0 4px 6px rgba(255, 144, 191, 0.25);">
-              🚀 Weiter teilen
+            <a href="https://wa.me/4915205602818?text=Hi%2C%20ich%20m%C3%B6chte%20gern%20%C3%BCber%20Ticket-Launches%20informiert%20werden." style="display: inline-block; background: #FF90BF; color: #ffffff; text-decoration: none; padding: 16px 32px; border-radius: 8px; font-weight: 600; font-size: 16px; box-shadow: 0 4px 6px rgba(255, 144, 191, 0.25);">
+              🎫 Informationen zum Ticket-Launch
             </a>
           </div>
           
@@ -458,9 +458,9 @@ async function sendPositionUpdateEmail(email, referralCode, position, jump) {
 async function sendFollowUpEmail(email, referralCode, position) {
   const referralLink = `${BASE_URL}/?ref=${referralCode}`;
   
-  const sendSmtpEmail = new SibApiV3Sdk.SendSmtpEmail();
+    const sendSmtpEmail = new SibApiV3Sdk.SendSmtpEmail();
   sendSmtpEmail.subject = "Sicher dir die ersten Tickets - Update";
-  sendSmtpEmail.htmlContent = `
+    sendSmtpEmail.htmlContent = `
     <!DOCTYPE html>
     <html>
     <head>
