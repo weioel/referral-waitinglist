@@ -641,7 +641,7 @@ initializeDatabase().then(() => {
 
 // Lokaler Server für Development
 if (process.env.NODE_ENV !== 'production' || !process.env.VERCEL) {
-  app.listen(PORT, () => {
+app.listen(PORT, () => {
     console.log(`🚀 Server läuft auf Port ${PORT}`);
     console.log(`🔗 Referral-Links Format: ${BASE_URL}/?ref=[referral-code]`);
     
