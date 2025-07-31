@@ -7,7 +7,7 @@ const SibApiV3Sdk = require('sib-api-v3-sdk');
 
 const app = express();
 const PORT = process.env.PORT || 3003;
-const BASE_URL = process.env.BASE_URL || 'https://waitinglist.cultshare.app';
+const BASE_URL = process.env.BASE_URL || 'https://www.seatfiller.de';
 
 // Supabase Client initialisieren
 const supabaseUrl = process.env.SUPABASE_URL || 'https://oqwqgvupmmgtgmkkovyq.supabase.co';
@@ -41,8 +41,8 @@ app.get('/api/health', async (req, res) => {
     
   res.json({ 
       status: 'healthy', 
-      timestamp: new Date().toISOString(),
-      port: PORT,
+    timestamp: new Date().toISOString(),
+    port: PORT,
       env: process.env.NODE_ENV || 'development',
       database: 'Supabase',
       users: count || 0
@@ -97,8 +97,8 @@ async function sendWelcomeEmail(email, referralCode) {
   const referralLink = `${BASE_URL}/?ref=${referralCode}`;
   
   const sendSmtpEmail = new SibApiV3Sdk.SendSmtpEmail();
-  sendSmtpEmail.subject = "Willkommen zur Warteliste! 🎉";
-  sendSmtpEmail.htmlContent = `
+    sendSmtpEmail.subject = "Willkommen zur Warteliste! 🎉";
+    sendSmtpEmail.htmlContent = `
     <!DOCTYPE html>
     <html>
     <head>
@@ -130,7 +130,7 @@ async function sendWelcomeEmail(email, referralCode) {
             </h3>
             <div style="background-color: #F8FAFF !important; border: 1px solid #E0E0E0 !important; border-radius: 8px; padding: 15px; font-family: 'Courier New', monospace; font-size: 14px; color: #333333 !important; word-break: break-all;">
               ${referralLink}
-            </div>
+      </div>
             <p style="color: #666666; font-size: 14px; margin: 15px 0 0 0;">
               Teile diesen Link mit Freunden und steige in der Warteliste auf!
             </p>
@@ -180,7 +180,7 @@ async function sendWelcomeEmail(email, referralCode) {
     </body>
     </html>
   `;
-  sendSmtpEmail.sender = { "name": "CultShare", "email": process.env.BREVO_SENDER_EMAIL || "team@cultshare.app" };
+  sendSmtpEmail.sender = { "name": "Seatfiller", "email": process.env.BREVO_SENDER_EMAIL || "leo@seatfiller.de" };
   sendSmtpEmail.to = [{ "email": email }];
 
   try {
@@ -207,116 +207,116 @@ async function sendWelcomeEmailWithPosition(email, referralCode, position, poten
   const referralLink = `${BASE_URL}/?ref=${referralCode}`;
   
   const sendSmtpEmail = new SibApiV3Sdk.SendSmtpEmail();
-  sendSmtpEmail.subject = "Willkommen zur Warteliste! 🎉";
-  sendSmtpEmail.htmlContent = `
-    <!DOCTYPE html>
-    <html>
-    <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="color-scheme" content="only light">
-      <title>Willkommen zur Warteliste</title>
-    </head>
-    <body style="margin: 0; padding: 0; background-color: #F8FAFF !important; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #000000 !important;">
-      <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff !important; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1); border-radius: 12px; color: #000000 !important;">
-        
-        <!-- Header -->
-        <div style="background: #FF90BF !important; padding: 40px 30px; text-align: center; border-radius: 12px 12px 0 0;">
-          <h1 style="color: #ffffff !important; margin: 0; font-size: 28px; font-weight: 600; letter-spacing: -0.5px;">
-            Willkommen zur Warteliste! 🎉
-          </h1>
-          <p style="color: #ffffff; margin: 10px 0 0 0; font-size: 16px; opacity: 0.9;">
-            Du bist jetzt Teil unserer exklusiven Community
-          </p>
-        </div>
-        
-        <!-- Content -->
-        <div style="padding: 40px 30px;">
+    sendSmtpEmail.subject = "Willkommen zur Warteliste! 🎉";
+    sendSmtpEmail.htmlContent = `
+      <!DOCTYPE html>
+      <html>
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="color-scheme" content="only light">
+        <title>Willkommen zur Warteliste</title>
+      </head>
+      <body style="margin: 0; padding: 0; background-color: #F8FAFF !important; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #000000 !important;">
+        <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff !important; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1); border-radius: 12px; color: #000000 !important;">
           
-          <!-- Position Card -->
-          <div style="background: #ffffff !important; border: 2px solid #FF90BF !important; border-radius: 12px; padding: 30px; margin-bottom: 30px; text-align: center; color: #FF90BF !important;">
-            <div style="font-size: 14px; text-transform: uppercase; letter-spacing: 1px; opacity: 0.8; margin-bottom: 10px;">
-              Deine aktuelle Position
-            </div>
-            <div style="font-size: 48px; font-weight: 700; margin-bottom: 10px;">
-              #${position + 1}
-            </div>
-            <div style="font-size: 16px; opacity: 0.9;">
-              ${position} Personen vor dir in der Warteliste
-            </div>
+          <!-- Header -->
+          <div style="background: #FF90BF !important; padding: 40px 30px; text-align: center; border-radius: 12px 12px 0 0;">
+            <h1 style="color: #ffffff !important; margin: 0; font-size: 28px; font-weight: 600; letter-spacing: -0.5px;">
+              Willkommen zur Warteliste! 🎉
+            </h1>
+            <p style="color: #ffffff; margin: 10px 0 0 0; font-size: 16px; opacity: 0.9;">
+              Du bist jetzt Teil unserer exklusiven Community
+            </p>
           </div>
           
-          <!-- Referral Link Card -->
-          <div style="background-color: #ffffff !important; border: 2px solid #F0F0F0 !important; border-radius: 12px; padding: 25px; margin-bottom: 30px;">
-            <h3 style="color: #FF90BF !important; margin: 0 0 15px 0; font-size: 18px; font-weight: 600;">
-              📎 Dein persönlicher Referral-Link
-            </h3>
-            <div style="background-color: #F8FAFF !important; border: 1px solid #E0E0E0 !important; border-radius: 8px; padding: 15px; font-family: 'Courier New', monospace; font-size: 14px; color: #333333 !important; word-break: break-all;">
+          <!-- Content -->
+          <div style="padding: 40px 30px;">
+            
+            <!-- Position Card -->
+            <div style="background: #ffffff !important; border: 2px solid #FF90BF !important; border-radius: 12px; padding: 30px; margin-bottom: 30px; text-align: center; color: #FF90BF !important;">
+              <div style="font-size: 14px; text-transform: uppercase; letter-spacing: 1px; opacity: 0.8; margin-bottom: 10px;">
+                Deine aktuelle Position
+              </div>
+              <div style="font-size: 48px; font-weight: 700; margin-bottom: 10px;">
+                #${position + 1}
+              </div>
+              <div style="font-size: 16px; opacity: 0.9;">
+                ${position} Personen vor dir in der Warteliste
+              </div>
+            </div>
+            
+            <!-- Referral Link Card -->
+            <div style="background-color: #ffffff !important; border: 2px solid #F0F0F0 !important; border-radius: 12px; padding: 25px; margin-bottom: 30px;">
+              <h3 style="color: #FF90BF !important; margin: 0 0 15px 0; font-size: 18px; font-weight: 600;">
+                📎 Dein persönlicher Referral-Link
+              </h3>
+              <div style="background-color: #F8FAFF !important; border: 1px solid #E0E0E0 !important; border-radius: 8px; padding: 15px; font-family: 'Courier New', monospace; font-size: 14px; color: #333333 !important; word-break: break-all;">
               ${referralLink}
-            </div>
-            <p style="color: #666666; font-size: 14px; margin: 15px 0 0 0;">
+              </div>
+              <p style="color: #666666; font-size: 14px; margin: 15px 0 0 0;">
               Teile diesen Link mit Freunden und steige weiter auf!
-            </p>
-          </div>
-          
-          <!-- Next Jump Card -->
-          <div style="background: #FF90BF !important; border-radius: 12px; padding: 25px; margin-bottom: 30px; color: #ffffff !important;">
-            <h3 style="margin: 0 0 15px 0; font-size: 18px; font-weight: 600;">
-              🚀 Mit der nächsten Anmeldung über deinen Link
-            </h3>
-            <div style="font-size: 24px; font-weight: 700; margin-bottom: 10px;">
+              </p>
+            </div>
+            
+            <!-- Next Jump Card -->
+            <div style="background: #FF90BF !important; border-radius: 12px; padding: 25px; margin-bottom: 30px; color: #ffffff !important;">
+              <h3 style="margin: 0 0 15px 0; font-size: 18px; font-weight: 600;">
+                🚀 Mit der nächsten Anmeldung über deinen Link
+              </h3>
+              <div style="font-size: 24px; font-weight: 700; margin-bottom: 10px;">
               +${potentialJump} ${potentialJump === 1 ? 'Platz' : 'Plätze'}
-            </div>
-            <p style="margin: 0; opacity: 0.9; font-size: 14px;">
-              Jede weitere Anmeldung über deinen Link bringt dich weiter nach vorne
-            </p>
-          </div>
-          
-          <!-- How it works -->
-          <div style="background-color: #ffffff !important; border: 2px solid #F0F0F0 !important; border-radius: 12px; padding: 25px; margin-bottom: 30px;">
-            <h3 style="color: #FF90BF !important; margin: 0 0 20px 0; font-size: 18px; font-weight: 600;">
-              💡 So funktioniert es
-            </h3>
-            <div style="display: flex; flex-direction: column; gap: 15px;">
-              <div style="display: flex; align-items: flex-start; gap: 15px;">
-                <div style="background: #FF90BF; color: #ffffff; min-width: 32px; min-height: 32px; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 14px; flex-shrink: 0;">1</div>
-                <span style="color: #333333; line-height: 1.4;">Teile deinen Referral-Link mit Freunden</span>
               </div>
-              <div style="display: flex; align-items: flex-start; gap: 15px;">
-                <div style="background: #FF90BF; color: #ffffff; min-width: 32px; min-height: 32px; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 14px; flex-shrink: 0;">2</div>
+              <p style="margin: 0; opacity: 0.9; font-size: 14px;">
+                Jede weitere Anmeldung über deinen Link bringt dich weiter nach vorne
+              </p>
+            </div>
+            
+            <!-- How it works -->
+            <div style="background-color: #ffffff !important; border: 2px solid #F0F0F0 !important; border-radius: 12px; padding: 25px; margin-bottom: 30px;">
+              <h3 style="color: #FF90BF !important; margin: 0 0 20px 0; font-size: 18px; font-weight: 600;">
+                💡 So funktioniert es
+              </h3>
+              <div style="display: flex; flex-direction: column; gap: 15px;">
+                <div style="display: flex; align-items: flex-start; gap: 15px;">
+                  <div style="background: #FF90BF; color: #ffffff; min-width: 32px; min-height: 32px; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 14px; flex-shrink: 0;">1</div>
+                  <span style="color: #333333; line-height: 1.4;">Teile deinen Referral-Link mit Freunden</span>
+                </div>
+                <div style="display: flex; align-items: flex-start; gap: 15px;">
+                  <div style="background: #FF90BF; color: #ffffff; min-width: 32px; min-height: 32px; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 14px; flex-shrink: 0;">2</div>
                 <span style="color: #333333; line-height: 1.4;">Für jede Anmeldung über deinen Link steigst du weiter auf</span>
-              </div>
-              <div style="display: flex; align-items: flex-start; gap: 15px;">
-                <div style="background: #FF90BF; color: #ffffff; min-width: 32px; min-height: 32px; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 14px; flex-shrink: 0;">3</div>
-                <span style="color: #333333; line-height: 1.4;">Je mehr Empfehlungen, desto höher deine Position!</span>
+                </div>
+                <div style="display: flex; align-items: flex-start; gap: 15px;">
+                  <div style="background: #FF90BF; color: #ffffff; min-width: 32px; min-height: 32px; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 14px; flex-shrink: 0;">3</div>
+                  <span style="color: #333333; line-height: 1.4;">Je mehr Empfehlungen, desto höher deine Position!</span>
+                </div>
               </div>
             </div>
-          </div>
-          
-          <!-- CTA Button -->
-          <div style="text-align: center; margin-bottom: 30px;">
+            
+            <!-- CTA Button -->
+            <div style="text-align: center; margin-bottom: 30px;">
             <a href="https://wa.me/4915205602818?text=Hi%2C%20ich%20m%C3%B6chte%20gern%20%C3%BCber%20Ticket-Launches%20informiert%20werden." style="display: inline-block; background: #FF90BF; color: #ffffff; text-decoration: none; padding: 16px 32px; border-radius: 8px; font-weight: 600; font-size: 16px; box-shadow: 0 4px 6px rgba(255, 144, 191, 0.25);">
               🎫 Informationen zum Ticket-Launch
-            </a>
+              </a>
+            </div>
+            
+          </div>
+          
+          <!-- Footer -->
+          <div style="background-color: #F8FAFF !important; padding: 30px; text-align: center; border-top: 1px solid rgba(0, 0, 0, 0.1) !important; border-radius: 0 0 12px 12px;">
+            <p style="color: #666666 !important; margin: 0; font-size: 14px;">
+            Weiter so! Du machst das großartig. 🚀
+            </p>
+            <p style="color: #999999; margin: 10px 0 0 0; font-size: 12px;">
+              Du erhältst diese E-Mail, weil du dich zur Warteliste angemeldet hast.
+            </p>
           </div>
           
         </div>
-        
-        <!-- Footer -->
-        <div style="background-color: #F8FAFF !important; padding: 30px; text-align: center; border-top: 1px solid rgba(0, 0, 0, 0.1) !important; border-radius: 0 0 12px 12px;">
-          <p style="color: #666666 !important; margin: 0; font-size: 14px;">
-            Weiter so! Du machst das großartig. 🚀
-          </p>
-          <p style="color: #999999; margin: 10px 0 0 0; font-size: 12px;">
-            Du erhältst diese E-Mail, weil du dich zur Warteliste angemeldet hast.
-          </p>
-        </div>
-        
-      </div>
-    </body>
-    </html>
-  `;
-  sendSmtpEmail.sender = { "name": "CultShare", "email": process.env.BREVO_SENDER_EMAIL || "team@cultshare.app" };
+      </body>
+      </html>
+    `;
+  sendSmtpEmail.sender = { "name": "Seatfiller", "email": process.env.BREVO_SENDER_EMAIL || "leo@seatfiller.de" };
   sendSmtpEmail.to = [{ "email": email }];
 
   try {
@@ -331,118 +331,118 @@ async function sendWelcomeEmailWithPosition(email, referralCode, position, poten
 
 async function sendPositionUpdateEmail(email, referralCode, position, jump) {
   const referralLink = `${BASE_URL}/?ref=${referralCode}`;
-  
+    
   const sendSmtpEmail = new SibApiV3Sdk.SendSmtpEmail();
-  sendSmtpEmail.subject = "Du bist in der Warteliste aufgestiegen! ⬆️";
-  sendSmtpEmail.htmlContent = `
-    <!DOCTYPE html>
-    <html>
-    <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="color-scheme" content="only light">
-      <title>Aufstieg in der Warteliste</title>
-    </head>
-    <body style="margin: 0; padding: 0; background-color: #F8FAFF !important; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #000000 !important;">
-      <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff !important; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1); border-radius: 12px; color: #000000 !important;">
-        
-        <!-- Header -->
-        <div style="background: #FF90BF !important; padding: 40px 30px; text-align: center; border-radius: 12px 12px 0 0;">
-          <h1 style="color: #ffffff !important; margin: 0; font-size: 28px; font-weight: 600; letter-spacing: -0.5px;">
-            Gratulation! 🎉
-          </h1>
-          <p style="color: #ffffff; margin: 10px 0 0 0; font-size: 16px; opacity: 0.9;">
-            Du bist in der Warteliste aufgestiegen!
-          </p>
-        </div>
-        
-        <!-- Content -->
-        <div style="padding: 40px 30px;">
+    sendSmtpEmail.subject = "Du bist in der Warteliste aufgestiegen! ⬆️";
+    sendSmtpEmail.htmlContent = `
+      <!DOCTYPE html>
+      <html>
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="color-scheme" content="only light">
+        <title>Aufstieg in der Warteliste</title>
+      </head>
+      <body style="margin: 0; padding: 0; background-color: #F8FAFF !important; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #000000 !important;">
+        <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff !important; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1); border-radius: 12px; color: #000000 !important;">
           
-          <!-- Position Card -->
-          <div style="background: #ffffff !important; border: 2px solid #FF90BF !important; border-radius: 12px; padding: 30px; margin-bottom: 30px; text-align: center; color: #FF90BF !important;">
-            <div style="font-size: 14px; text-transform: uppercase; letter-spacing: 1px; opacity: 0.8; margin-bottom: 10px;">
-              Deine neue Position
-            </div>
-            <div style="font-size: 48px; font-weight: 700; margin-bottom: 10px;">
-              #${position + 1}
-            </div>
-            <div style="font-size: 16px; opacity: 0.9;">
-              ${position} Personen vor dir in der Warteliste
-            </div>
+          <!-- Header -->
+          <div style="background: #FF90BF !important; padding: 40px 30px; text-align: center; border-radius: 12px 12px 0 0;">
+            <h1 style="color: #ffffff !important; margin: 0; font-size: 28px; font-weight: 600; letter-spacing: -0.5px;">
+              Gratulation! 🎉
+            </h1>
+            <p style="color: #ffffff; margin: 10px 0 0 0; font-size: 16px; opacity: 0.9;">
+              Du bist in der Warteliste aufgestiegen!
+            </p>
           </div>
           
-          <!-- Referral Link Card -->
-          <div style="background-color: #ffffff !important; border: 2px solid #F0F0F0 !important; border-radius: 12px; padding: 25px; margin-bottom: 30px;">
-            <h3 style="color: #FF90BF !important; margin: 0 0 15px 0; font-size: 18px; font-weight: 600;">
-              📎 Dein persönlicher Referral-Link
-            </h3>
-            <div style="background-color: #F8FAFF !important; border: 1px solid #E0E0E0 !important; border-radius: 8px; padding: 15px; font-family: 'Courier New', monospace; font-size: 14px; color: #333333 !important; word-break: break-all;">
+          <!-- Content -->
+          <div style="padding: 40px 30px;">
+            
+            <!-- Position Card -->
+            <div style="background: #ffffff !important; border: 2px solid #FF90BF !important; border-radius: 12px; padding: 30px; margin-bottom: 30px; text-align: center; color: #FF90BF !important;">
+              <div style="font-size: 14px; text-transform: uppercase; letter-spacing: 1px; opacity: 0.8; margin-bottom: 10px;">
+                Deine neue Position
+              </div>
+              <div style="font-size: 48px; font-weight: 700; margin-bottom: 10px;">
+                #${position + 1}
+              </div>
+              <div style="font-size: 16px; opacity: 0.9;">
+                ${position} Personen vor dir in der Warteliste
+              </div>
+            </div>
+            
+            <!-- Referral Link Card -->
+            <div style="background-color: #ffffff !important; border: 2px solid #F0F0F0 !important; border-radius: 12px; padding: 25px; margin-bottom: 30px;">
+              <h3 style="color: #FF90BF !important; margin: 0 0 15px 0; font-size: 18px; font-weight: 600;">
+                📎 Dein persönlicher Referral-Link
+              </h3>
+              <div style="background-color: #F8FAFF !important; border: 1px solid #E0E0E0 !important; border-radius: 8px; padding: 15px; font-family: 'Courier New', monospace; font-size: 14px; color: #333333 !important; word-break: break-all;">
               ${referralLink}
-            </div>
-            <p style="color: #666666; font-size: 14px; margin: 15px 0 0 0;">
-              Teile diesen Link mit Freunden und steige weiter auf!
-            </p>
-          </div>
-          
-          <!-- Next Jump Card -->
-          <div style="background: #FF90BF !important; border-radius: 12px; padding: 25px; margin-bottom: 30px; color: #ffffff !important;">
-            <h3 style="margin: 0 0 15px 0; font-size: 18px; font-weight: 600;">
-              🚀 Mit der nächsten Anmeldung über deinen Link
-            </h3>
-            <div style="font-size: 24px; font-weight: 700; margin-bottom: 10px;">
-              +${jump} ${jump === 1 ? 'Platz' : 'Plätze'}
-            </div>
-            <p style="margin: 0; opacity: 0.9; font-size: 14px;">
-              Jede weitere Anmeldung über deinen Link bringt dich weiter nach vorne
-            </p>
-          </div>
-          
-          <!-- How it works -->
-          <div style="background-color: #ffffff !important; border: 2px solid #F0F0F0 !important; border-radius: 12px; padding: 25px; margin-bottom: 30px;">
-            <h3 style="color: #FF90BF !important; margin: 0 0 20px 0; font-size: 18px; font-weight: 600;">
-              💡 So funktioniert es
-            </h3>
-            <div style="display: flex; flex-direction: column; gap: 15px;">
-              <div style="display: flex; align-items: flex-start; gap: 15px;">
-                <div style="background: #FF90BF; color: #ffffff; min-width: 32px; min-height: 32px; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 14px; flex-shrink: 0;">1</div>
-                <span style="color: #333333; line-height: 1.4;">Teile deinen Referral-Link mit Freunden</span>
               </div>
-              <div style="display: flex; align-items: flex-start; gap: 15px;">
-                <div style="background: #FF90BF; color: #ffffff; min-width: 32px; min-height: 32px; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 14px; flex-shrink: 0;">2</div>
-                <span style="color: #333333; line-height: 1.4;">Für jede Anmeldung über deinen Link steigst du weiter auf</span>
+              <p style="color: #666666; font-size: 14px; margin: 15px 0 0 0;">
+                Teile diesen Link mit Freunden und steige weiter auf!
+              </p>
+            </div>
+            
+            <!-- Next Jump Card -->
+            <div style="background: #FF90BF !important; border-radius: 12px; padding: 25px; margin-bottom: 30px; color: #ffffff !important;">
+              <h3 style="margin: 0 0 15px 0; font-size: 18px; font-weight: 600;">
+                🚀 Mit der nächsten Anmeldung über deinen Link
+              </h3>
+              <div style="font-size: 24px; font-weight: 700; margin-bottom: 10px;">
+                +${jump} ${jump === 1 ? 'Platz' : 'Plätze'}
               </div>
-              <div style="display: flex; align-items: flex-start; gap: 15px;">
-                <div style="background: #FF90BF; color: #ffffff; min-width: 32px; min-height: 32px; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 14px; flex-shrink: 0;">3</div>
-                <span style="color: #333333; line-height: 1.4;">Je mehr Empfehlungen, desto höher deine Position!</span>
+              <p style="margin: 0; opacity: 0.9; font-size: 14px;">
+                Jede weitere Anmeldung über deinen Link bringt dich weiter nach vorne
+              </p>
+            </div>
+            
+            <!-- How it works -->
+            <div style="background-color: #ffffff !important; border: 2px solid #F0F0F0 !important; border-radius: 12px; padding: 25px; margin-bottom: 30px;">
+              <h3 style="color: #FF90BF !important; margin: 0 0 20px 0; font-size: 18px; font-weight: 600;">
+                💡 So funktioniert es
+              </h3>
+              <div style="display: flex; flex-direction: column; gap: 15px;">
+                <div style="display: flex; align-items: flex-start; gap: 15px;">
+                  <div style="background: #FF90BF; color: #ffffff; min-width: 32px; min-height: 32px; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 14px; flex-shrink: 0;">1</div>
+                  <span style="color: #333333; line-height: 1.4;">Teile deinen Referral-Link mit Freunden</span>
+                </div>
+                <div style="display: flex; align-items: flex-start; gap: 15px;">
+                  <div style="background: #FF90BF; color: #ffffff; min-width: 32px; min-height: 32px; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 14px; flex-shrink: 0;">2</div>
+                  <span style="color: #333333; line-height: 1.4;">Für jede Anmeldung über deinen Link steigst du weiter auf</span>
+                </div>
+                <div style="display: flex; align-items: flex-start; gap: 15px;">
+                  <div style="background: #FF90BF; color: #ffffff; min-width: 32px; min-height: 32px; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 14px; flex-shrink: 0;">3</div>
+                  <span style="color: #333333; line-height: 1.4;">Je mehr Empfehlungen, desto höher deine Position!</span>
+                </div>
               </div>
             </div>
-          </div>
-          
-          <!-- CTA Button -->
-          <div style="text-align: center; margin-bottom: 30px;">
+            
+            <!-- CTA Button -->
+            <div style="text-align: center; margin-bottom: 30px;">
             <a href="https://wa.me/4915205602818?text=Hi%2C%20ich%20m%C3%B6chte%20gern%20%C3%BCber%20Ticket-Launches%20informiert%20werden." style="display: inline-block; background: #FF90BF; color: #ffffff; text-decoration: none; padding: 16px 32px; border-radius: 8px; font-weight: 600; font-size: 16px; box-shadow: 0 4px 6px rgba(255, 144, 191, 0.25);">
               🎫 Informationen zum Ticket-Launch
-            </a>
+              </a>
+            </div>
+            
+          </div>
+          
+          <!-- Footer -->
+          <div style="background-color: #F8FAFF !important; padding: 30px; text-align: center; border-top: 1px solid rgba(0, 0, 0, 0.1) !important; border-radius: 0 0 12px 12px;">
+            <p style="color: #666666 !important; margin: 0; font-size: 14px;">
+              Weiter so! Du machst das großartig. 🚀
+            </p>
+            <p style="color: #999999; margin: 10px 0 0 0; font-size: 12px;">
+              Du erhältst diese E-Mail, weil du dich zur Warteliste angemeldet hast.
+            </p>
           </div>
           
         </div>
-        
-        <!-- Footer -->
-        <div style="background-color: #F8FAFF !important; padding: 30px; text-align: center; border-top: 1px solid rgba(0, 0, 0, 0.1) !important; border-radius: 0 0 12px 12px;">
-          <p style="color: #666666 !important; margin: 0; font-size: 14px;">
-            Weiter so! Du machst das großartig. 🚀
-          </p>
-          <p style="color: #999999; margin: 10px 0 0 0; font-size: 12px;">
-            Du erhältst diese E-Mail, weil du dich zur Warteliste angemeldet hast.
-          </p>
-        </div>
-        
-      </div>
-    </body>
-    </html>
-  `;
-  sendSmtpEmail.sender = { "name": "CultShare", "email": process.env.BREVO_SENDER_EMAIL || "team@cultshare.app" };
+      </body>
+      </html>
+    `;
+  sendSmtpEmail.sender = { "name": "Seatfiller", "email": process.env.BREVO_SENDER_EMAIL || "leo@seatfiller.de" };
   sendSmtpEmail.to = [{ "email": email }];
 
   try {
@@ -457,118 +457,118 @@ async function sendPositionUpdateEmail(email, referralCode, position, jump) {
 
 async function sendFollowUpEmail(email, referralCode, position) {
   const referralLink = `${BASE_URL}/?ref=${referralCode}`;
-  
+    
   const sendSmtpEmail = new SibApiV3Sdk.SendSmtpEmail();
-  sendSmtpEmail.subject = "Sicher dir die ersten Tickets - Update";
-  sendSmtpEmail.htmlContent = `
-    <!DOCTYPE html>
-    <html>
-    <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="color-scheme" content="only light">
-      <title>Deine Position in der Warteliste</title>
-    </head>
-    <body style="margin: 0; padding: 0; background-color: #F8FAFF !important; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #000000 !important;">
-      <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff !important; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1); border-radius: 12px; color: #000000 !important;">
-        
-        <!-- Header -->
-        <div style="background: #FF90BF !important; padding: 40px 30px; text-align: center; border-radius: 12px 12px 0 0;">
-          <h1 style="color: #ffffff !important; margin: 0; font-size: 28px; font-weight: 600; letter-spacing: -0.5px;">
-            Sicher dir die ersten Tickets
-          </h1>
-          <p style="color: #ffffff; margin: 10px 0 0 0; font-size: 16px; opacity: 0.9;">
-            Hier ist dein aktueller Status
-          </p>
-        </div>
-        
-        <!-- Content -->
-        <div style="padding: 40px 30px;">
+    sendSmtpEmail.subject = "Sicher dir die ersten Tickets - Update";
+    sendSmtpEmail.htmlContent = `
+      <!DOCTYPE html>
+      <html>
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="color-scheme" content="only light">
+        <title>Deine Position in der Warteliste</title>
+      </head>
+      <body style="margin: 0; padding: 0; background-color: #F8FAFF !important; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #000000 !important;">
+        <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff !important; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1); border-radius: 12px; color: #000000 !important;">
           
-          <!-- Urgency Card -->
-          <div style="background: #FF90BF !important; border-radius: 12px; padding: 25px; margin-bottom: 30px; text-align: center; color: #ffffff !important;">
-            <h2 style="margin: 0 0 15px 0; font-size: 22px; font-weight: 600;">
-              Exklusive Tickets verfügbar
-            </h2>
-            <p style="margin: 0; font-size: 16px; opacity: 0.9;">
-              Die ersten 100 Plätze erhalten bevorzugten Zugang
+          <!-- Header -->
+          <div style="background: #FF90BF !important; padding: 40px 30px; text-align: center; border-radius: 12px 12px 0 0;">
+            <h1 style="color: #ffffff !important; margin: 0; font-size: 28px; font-weight: 600; letter-spacing: -0.5px;">
+              Sicher dir die ersten Tickets
+            </h1>
+            <p style="color: #ffffff; margin: 10px 0 0 0; font-size: 16px; opacity: 0.9;">
+              Hier ist dein aktueller Status
             </p>
           </div>
           
-          <!-- Position Card -->
-          <div style="background: #ffffff !important; border: 2px solid #FF90BF !important; border-radius: 12px; padding: 30px; margin-bottom: 30px; text-align: center; color: #FF90BF !important;">
-            <div style="font-size: 14px; text-transform: uppercase; letter-spacing: 1px; opacity: 0.8; margin-bottom: 10px;">
-              Deine aktuelle Position
+          <!-- Content -->
+          <div style="padding: 40px 30px;">
+            
+            <!-- Urgency Card -->
+            <div style="background: #FF90BF !important; border-radius: 12px; padding: 25px; margin-bottom: 30px; text-align: center; color: #ffffff !important;">
+              <h2 style="margin: 0 0 15px 0; font-size: 22px; font-weight: 600;">
+                Exklusive Tickets verfügbar
+              </h2>
+              <p style="margin: 0; font-size: 16px; opacity: 0.9;">
+                Die ersten 100 Plätze erhalten bevorzugten Zugang
+              </p>
             </div>
-            <div style="font-size: 48px; font-weight: 700; margin-bottom: 10px;">
-              #${position + 1}
+            
+            <!-- Position Card -->
+            <div style="background: #ffffff !important; border: 2px solid #FF90BF !important; border-radius: 12px; padding: 30px; margin-bottom: 30px; text-align: center; color: #FF90BF !important;">
+              <div style="font-size: 14px; text-transform: uppercase; letter-spacing: 1px; opacity: 0.8; margin-bottom: 10px;">
+                Deine aktuelle Position
+              </div>
+              <div style="font-size: 48px; font-weight: 700; margin-bottom: 10px;">
+                #${position + 1}
+              </div>
+              <div style="font-size: 16px; opacity: 0.9;">
+                ${position} Personen vor dir in der Warteliste
+              </div>
             </div>
-            <div style="font-size: 16px; opacity: 0.9;">
-              ${position} Personen vor dir in der Warteliste
+            
+            <!-- Urgency Message -->
+            <div style="background-color: #FFF3CD !important; border: 2px solid #FFEAA7 !important; border-radius: 12px; padding: 25px; margin-bottom: 30px;">
+              <h3 style="color: #856404 !important; margin: 0 0 15px 0; font-size: 18px; font-weight: 600;">
+                💡 Tipp für bessere Position
+              </h3>
+              <p style="color: #856404 !important; margin: 0; font-size: 16px; line-height: 1.5;">
+                <strong>Du stehst aktuell auf Position #${position + 1}.</strong> Tipp: Teile deinen Link mit deinen Freunden um in die Top 100 aufzusteigen
+              </p>
             </div>
-          </div>
-          
-          <!-- Urgency Message -->
-          <div style="background-color: #FFF3CD !important; border: 2px solid #FFEAA7 !important; border-radius: 12px; padding: 25px; margin-bottom: 30px;">
-            <h3 style="color: #856404 !important; margin: 0 0 15px 0; font-size: 18px; font-weight: 600;">
-              💡 Tipp für bessere Position
-            </h3>
-            <p style="color: #856404 !important; margin: 0; font-size: 16px; line-height: 1.5;">
-              <strong>Du stehst aktuell auf Position #${position + 1}.</strong> Tipp: Teile deinen Link mit deinen Freunden um in die Top 100 aufzusteigen
-            </p>
-          </div>
-          
-          <!-- Referral Link Card -->
-          <div style="background-color: #ffffff !important; border: 2px solid #F0F0F0 !important; border-radius: 12px; padding: 25px; margin-bottom: 30px;">
-            <h3 style="color: #FF90BF !important; margin: 0 0 15px 0; font-size: 18px; font-weight: 600;">
-              🔗 Dein persönlicher Referral-Link
-            </h3>
-            <div style="background-color: #F8FAFF !important; border: 1px solid #E0E0E0 !important; border-radius: 8px; padding: 15px; font-family: 'Courier New', monospace; font-size: 14px; color: #333333 !important; word-break: break-all;">
+            
+            <!-- Referral Link Card -->
+            <div style="background-color: #ffffff !important; border: 2px solid #F0F0F0 !important; border-radius: 12px; padding: 25px; margin-bottom: 30px;">
+              <h3 style="color: #FF90BF !important; margin: 0 0 15px 0; font-size: 18px; font-weight: 600;">
+                🔗 Dein persönlicher Referral-Link
+              </h3>
+              <div style="background-color: #F8FAFF !important; border: 1px solid #E0E0E0 !important; border-radius: 8px; padding: 15px; font-family: 'Courier New', monospace; font-size: 14px; color: #333333 !important; word-break: break-all;">
               ${referralLink}
+              </div>
+              <p style="color: #666666; font-size: 14px; margin: 15px 0 0 0;">
+                Teile diesen Link mit Freunden und verbessere deine Position
+              </p>
             </div>
-            <p style="color: #666666; font-size: 14px; margin: 15px 0 0 0;">
-              Teile diesen Link mit Freunden und verbessere deine Position
+            
+            <!-- How it works -->
+            <div style="background-color: #ffffff !important; border: 2px solid #F0F0F0 !important; border-radius: 12px; padding: 25px; margin-bottom: 30px;">
+              <h3 style="color: #FF90BF !important; margin: 0 0 20px 0; font-size: 18px; font-weight: 600;">
+                💡 So funktioniert es
+              </h3>
+              <div style="display: flex; flex-direction: column; gap: 15px;">
+                <div style="display: flex; align-items: flex-start; gap: 15px;">
+                  <div style="background: #FF90BF; color: #ffffff; min-width: 32px; min-height: 32px; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 14px; flex-shrink: 0;">1</div>
+                  <span style="color: #333333; line-height: 1.4;">Teile deinen Referral-Link mit Freunden</span>
+                </div>
+                <div style="display: flex; align-items: flex-start; gap: 15px;">
+                  <div style="background: #FF90BF; color: #ffffff; min-width: 32px; min-height: 32px; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 14px; flex-shrink: 0;">2</div>
+                  <span style="color: #333333; line-height: 1.4;">Für jede Anmeldung über deinen Link steigst du auf</span>
+                </div>
+                <div style="display: flex; align-items: flex-start; gap: 15px;">
+                  <div style="background: #FF90BF; color: #ffffff; min-width: 32px; min-height: 32px; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 14px; flex-shrink: 0;">3</div>
+                  <span style="color: #333333; line-height: 1.4;">Je mehr Empfehlungen, desto höher deine Position!</span>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          
+          <!-- Footer -->
+          <div style="background-color: #F8FAFF !important; padding: 30px; text-align: center; border-top: 1px solid rgba(0, 0, 0, 0.1) !important; border-radius: 0 0 12px 12px;">
+            <p style="color: #666666 !important; margin: 0; font-size: 14px;">
+              Vielen Dank für dein Interesse an unserer Warteliste!
+            </p>
+            <p style="color: #999999; margin: 10px 0 0 0; font-size: 12px;">
+              Du erhältst diese E-Mail, weil du dich zur Warteliste angemeldet hast.
             </p>
           </div>
           
-          <!-- How it works -->
-          <div style="background-color: #ffffff !important; border: 2px solid #F0F0F0 !important; border-radius: 12px; padding: 25px; margin-bottom: 30px;">
-            <h3 style="color: #FF90BF !important; margin: 0 0 20px 0; font-size: 18px; font-weight: 600;">
-              💡 So funktioniert es
-            </h3>
-            <div style="display: flex; flex-direction: column; gap: 15px;">
-              <div style="display: flex; align-items: flex-start; gap: 15px;">
-                <div style="background: #FF90BF; color: #ffffff; min-width: 32px; min-height: 32px; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 14px; flex-shrink: 0;">1</div>
-                <span style="color: #333333; line-height: 1.4;">Teile deinen Referral-Link mit Freunden</span>
-              </div>
-              <div style="display: flex; align-items: flex-start; gap: 15px;">
-                <div style="background: #FF90BF; color: #ffffff; min-width: 32px; min-height: 32px; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 14px; flex-shrink: 0;">2</div>
-                <span style="color: #333333; line-height: 1.4;">Für jede Anmeldung über deinen Link steigst du auf</span>
-              </div>
-              <div style="display: flex; align-items: flex-start; gap: 15px;">
-                <div style="background: #FF90BF; color: #ffffff; min-width: 32px; min-height: 32px; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 14px; flex-shrink: 0;">3</div>
-                <span style="color: #333333; line-height: 1.4;">Je mehr Empfehlungen, desto höher deine Position!</span>
-              </div>
-            </div>
-          </div>
-          
         </div>
-        
-        <!-- Footer -->
-        <div style="background-color: #F8FAFF !important; padding: 30px; text-align: center; border-top: 1px solid rgba(0, 0, 0, 0.1) !important; border-radius: 0 0 12px 12px;">
-          <p style="color: #666666 !important; margin: 0; font-size: 14px;">
-            Vielen Dank für dein Interesse an unserer Warteliste!
-          </p>
-          <p style="color: #999999; margin: 10px 0 0 0; font-size: 12px;">
-            Du erhältst diese E-Mail, weil du dich zur Warteliste angemeldet hast.
-          </p>
-        </div>
-        
-      </div>
-    </body>
-    </html>
-  `;
-  sendSmtpEmail.sender = { "name": "CultShare", "email": process.env.BREVO_SENDER_EMAIL || "team@cultshare.app" };
+      </body>
+      </html>
+    `;
+  sendSmtpEmail.sender = { "name": "Seatfiller", "email": process.env.BREVO_SENDER_EMAIL || "leo@seatfiller.de" };
   sendSmtpEmail.to = [{ "email": email }];
 
   try {
@@ -968,8 +968,8 @@ async function checkFollowUpEmails() {
         
         // Follow-up E-Mail senden
         const success = await sendFollowUpEmail(row.email, row.referral_code, position);
-        
-        if (success) {
+    
+    if (success) {
           // Als versendet markieren
           await supabase
             .from('waitinglist')
@@ -981,7 +981,7 @@ async function checkFollowUpEmails() {
       // Kurze Pause zwischen E-Mails
       await new Promise(resolve => setTimeout(resolve, 1000));
       
-    } catch (error) {
+  } catch (error) {
       console.error('Fehler beim Senden der Follow-up E-Mail:', error);
     }
   }

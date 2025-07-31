@@ -7,7 +7,7 @@ const SibApiV3Sdk = require('sib-api-v3-sdk');
 
 const app = express();
 const PORT = process.env.PORT || 3003;
-const BASE_URL = process.env.BASE_URL || 'https://waitinglist.cultshare.app';
+const BASE_URL = process.env.BASE_URL || 'https://www.seatfiller.de';
 
 // Supabase Client initialisieren
 const supabaseUrl = process.env.SUPABASE_URL || 'https://oqwqgvupmmgtgmkkovyq.supabase.co';
@@ -180,7 +180,7 @@ async function sendWelcomeEmail(email, referralCode) {
     </body>
     </html>
     `;
-  sendSmtpEmail.sender = { "name": "CultShare", "email": process.env.BREVO_SENDER_EMAIL || "team@cultshare.app" };
+  sendSmtpEmail.sender = { "name": "Seatfiller", "email": process.env.BREVO_SENDER_EMAIL || "leo@seatfiller.de" };
   sendSmtpEmail.to = [{ "email": email }];
 
   try {
@@ -316,7 +316,7 @@ async function sendWelcomeEmailWithPosition(email, referralCode, position, poten
     </body>
     </html>
   `;
-  sendSmtpEmail.sender = { "name": "CultShare", "email": process.env.BREVO_SENDER_EMAIL || "team@cultshare.app" };
+  sendSmtpEmail.sender = { "name": "Seatfiller", "email": process.env.BREVO_SENDER_EMAIL || "leo@seatfiller.de" };
   sendSmtpEmail.to = [{ "email": email }];
 
   try {
@@ -442,7 +442,7 @@ async function sendPositionUpdateEmail(email, referralCode, position, jump) {
     </body>
     </html>
   `;
-  sendSmtpEmail.sender = { "name": "CultShare", "email": process.env.BREVO_SENDER_EMAIL || "team@cultshare.app" };
+  sendSmtpEmail.sender = { "name": "Seatfiller", "email": process.env.BREVO_SENDER_EMAIL || "leo@seatfiller.de" };
   sendSmtpEmail.to = [{ "email": email }];
 
   try {
@@ -568,7 +568,7 @@ async function sendFollowUpEmail(email, referralCode, position) {
     </body>
     </html>
   `;
-  sendSmtpEmail.sender = { "name": "CultShare", "email": process.env.BREVO_SENDER_EMAIL || "team@cultshare.app" };
+  sendSmtpEmail.sender = { "name": "Seatfiller", "email": process.env.BREVO_SENDER_EMAIL || "leo@seatfiller.de" };
   sendSmtpEmail.to = [{ "email": email }];
 
   try {
