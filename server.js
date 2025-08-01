@@ -10,8 +10,8 @@ const PORT = process.env.PORT || 3003;
 const BASE_URL = process.env.BASE_URL || 'https://www.seatfiller.de';
 
 // Supabase Client initialisieren
-const supabaseUrl = process.env.SUPABASE_URL;
-const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+const supabaseUrl = process.env.SUPABASE_URL || 'https://oqwqgvupmmgtgmkkovyq.supabase.co';
+const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9xd3FndnVwbW1ndGdta2tvdnlxIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1MzI2MzUxNiwiZXhwIjoyMDY4ODM5NTE2fQ.PCp8NjZ3VXzykSSU2a3arNG8w9L79VSPnTbXr88v7H0';
 
 const supabase = createClient(supabaseUrl, supabaseServiceKey);
 
