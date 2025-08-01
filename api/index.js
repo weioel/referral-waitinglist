@@ -97,7 +97,7 @@ async function sendWelcomeEmail(email, referralCode) {
   const referralLink = `${BASE_URL}/?ref=${referralCode}`;
   
     const sendSmtpEmail = new SibApiV3Sdk.SendSmtpEmail();
-  sendSmtpEmail.subject = "Willkommen zur Warteliste! 🎉";
+  sendSmtpEmail.subject = "Bestätigung zur Wartelistenanmeldung! 🎉";
     sendSmtpEmail.htmlContent = `
     <!DOCTYPE html>
     <html>
@@ -113,10 +113,10 @@ async function sendWelcomeEmail(email, referralCode) {
         <!-- Header -->
         <div style="background: #FF90BF !important; padding: 40px 30px; text-align: center; border-radius: 12px 12px 0 0;">
           <h1 style="color: #ffffff !important; margin: 0; font-size: 28px; font-weight: 600; letter-spacing: -0.5px;">
-            Willkommen zur Warteliste! 🎉
+            Bestätigung zur Wartelistenanmeldung! 🎉
           </h1>
           <p style="color: #ffffff; margin: 10px 0 0 0; font-size: 16px; opacity: 0.9;">
-            Du bist jetzt Teil unserer exklusiven Community
+            Du bist jetzt auf der Warteliste zur exklusiven Seatfiller Community
           </p>
         </div>
         
@@ -182,6 +182,13 @@ async function sendWelcomeEmail(email, referralCode) {
     `;
   sendSmtpEmail.sender = { "name": "Seatfiller", "email": process.env.BREVO_SENDER_EMAIL || "leo@seatfiller.de" };
   sendSmtpEmail.to = [{ "email": email }];
+    sendSmtpEmail.headers = {
+      "X-Priority": "1",
+      "Importance": "high",
+      "X-MSMail-Priority": "High",
+      "X-Mailer": "Seatfiller Account System",
+      "X-Category": "transactional"
+    };
 
   try {
     await apiInstance.sendTransacEmail(sendSmtpEmail);
@@ -207,7 +214,7 @@ async function sendWelcomeEmailWithPosition(email, referralCode, position, poten
   const referralLink = `${BASE_URL}/?ref=${referralCode}`;
   
     const sendSmtpEmail = new SibApiV3Sdk.SendSmtpEmail();
-  sendSmtpEmail.subject = "Willkommen zur Warteliste! 🎉";
+  sendSmtpEmail.subject = "Bestätigung zur Wartelistenanmeldung! 🎉";
     sendSmtpEmail.htmlContent = `
     <!DOCTYPE html>
     <html>
@@ -223,10 +230,10 @@ async function sendWelcomeEmailWithPosition(email, referralCode, position, poten
         <!-- Header -->
         <div style="background: #FF90BF !important; padding: 40px 30px; text-align: center; border-radius: 12px 12px 0 0;">
           <h1 style="color: #ffffff !important; margin: 0; font-size: 28px; font-weight: 600; letter-spacing: -0.5px;">
-            Willkommen zur Warteliste! 🎉
+            Bestätigung zur Wartelistenanmeldung! 🎉
           </h1>
           <p style="color: #ffffff; margin: 10px 0 0 0; font-size: 16px; opacity: 0.9;">
-            Du bist jetzt Teil unserer exklusiven Community
+            Du bist jetzt auf der Warteliste zur exklusiven Seatfiller Community
           </p>
         </div>
         
@@ -318,6 +325,13 @@ async function sendWelcomeEmailWithPosition(email, referralCode, position, poten
   `;
   sendSmtpEmail.sender = { "name": "Seatfiller", "email": process.env.BREVO_SENDER_EMAIL || "leo@seatfiller.de" };
   sendSmtpEmail.to = [{ "email": email }];
+    sendSmtpEmail.headers = {
+      "X-Priority": "1",
+      "Importance": "high",
+      "X-MSMail-Priority": "High",
+      "X-Mailer": "Seatfiller Account System",
+      "X-Category": "transactional"
+    };
 
   try {
     await apiInstance.sendTransacEmail(sendSmtpEmail);
@@ -444,6 +458,13 @@ async function sendPositionUpdateEmail(email, referralCode, position, jump) {
   `;
   sendSmtpEmail.sender = { "name": "Seatfiller", "email": process.env.BREVO_SENDER_EMAIL || "leo@seatfiller.de" };
   sendSmtpEmail.to = [{ "email": email }];
+    sendSmtpEmail.headers = {
+      "X-Priority": "1",
+      "Importance": "high",
+      "X-MSMail-Priority": "High",
+      "X-Mailer": "Seatfiller Account System",
+      "X-Category": "transactional"
+    };
 
   try {
     await apiInstance.sendTransacEmail(sendSmtpEmail);
@@ -570,6 +591,13 @@ async function sendFollowUpEmail(email, referralCode, position) {
   `;
   sendSmtpEmail.sender = { "name": "Seatfiller", "email": process.env.BREVO_SENDER_EMAIL || "leo@seatfiller.de" };
   sendSmtpEmail.to = [{ "email": email }];
+    sendSmtpEmail.headers = {
+      "X-Priority": "1",
+      "Importance": "high",
+      "X-MSMail-Priority": "High",
+      "X-Mailer": "Seatfiller Account System",
+      "X-Category": "transactional"
+    };
 
   try {
     await apiInstance.sendTransacEmail(sendSmtpEmail);
